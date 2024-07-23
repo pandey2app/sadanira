@@ -11,10 +11,10 @@ const Footer = () => {
                             <img src="img/logo/header-text.png" height='50px' alt="Sadanira" />
                             <p class="lh-lg mb-4">The Sadanira Mahotsav stands as a testament to the power of literature, foster growth, and nurture a love for the written word in even the most remote of places.</p>
                             <div class="footer-icon d-flex">
-                                <a class="btn btn-primary btn-sm-square me-2 rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-primary btn-sm-square me-2 rounded-circle" href=""><i class="fab fa-twitter"></i></a>
-                                <a href="#" class="btn btn-primary btn-sm-square me-2 rounded-circle"><i class="fab fa-instagram"></i></a>
-                                <a href="#" class="btn btn-primary btn-sm-square rounded-circle"><i class="fab fa-linkedin-in"></i></a>
+                                <a class="btn btn-primary btn-sm-square me-2 rounded-circle" href="facebook.com"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-primary btn-sm-square me-2 rounded-circle" href="facebook.com"><i class="fab fa-twitter"></i></a>
+                                <a href="instagram.com" class="btn btn-primary btn-sm-square me-2 rounded-circle"><i class="fab fa-instagram"></i></a>
+                                <a href="instagrm.com" class="btn btn-primary btn-sm-square rounded-circle"><i class="fab fa-linkedin-in"></i></a>
                             </div>
                         </div>
                     </div>
@@ -22,10 +22,10 @@ const Footer = () => {
                         <div class="footer-item">
                             <h4 class="mb-4">Fields of Work</h4>
                             <div class="d-flex flex-column align-items-start">
-                                <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Sahitya</a>
-                                <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Sangeet</a>
-                                <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Cinema</a>
-                                <a class="text-body mb-3" href=""><i class="fa fa-check text-primary me-2"></i>Social Service</a>
+                                <a class="text-body mb-3" href="facebook.com"><i class="fa fa-check text-primary me-2"></i>Sahitya</a>
+                                <a class="text-body mb-3" href="facebook.com"><i class="fa fa-check text-primary me-2"></i>Sangeet</a>
+                                <a class="text-body mb-3" href="facebook.com"><i class="fa fa-check text-primary me-2"></i>Cinema</a>
+                                <a class="text-body mb-3" href="facebook.com"><i class="fa fa-check text-primary me-2"></i>Social Service</a>
                             </div>
                         </div>
                     </div>

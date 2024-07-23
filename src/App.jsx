@@ -1,5 +1,4 @@
 import Navbar from './layouts/Navbar';
-import Header from './layouts/Header';
 import Router from './routes/Router';
 import Footer from './layouts/Footer';
 import Copyright from './layouts/Copyright';

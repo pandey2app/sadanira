@@ -8,7 +8,6 @@ import TeamSection from '../layouts/TeamSection'
 import JoinUs from '../layouts/JoinUs'
 import TeamLead from '../layouts/TeamLead'
 import Testimonial from '../layouts/Testimonial'
-import BlogSection from '../layouts/BlogSection'
 
 const Home = () => {
     return (

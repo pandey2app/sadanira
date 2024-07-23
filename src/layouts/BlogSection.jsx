@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const BlogSection = () => {
   return (
@@ -21,7 +22,7 @@ const BlogSection = () => {
                                         <p class="fw-bold mb-0">Sep</p>
                                     </div>
                                 </div>
-                                <a href="#" class="h5 lh-base my-auto h-100 p-3">How to get more test in your food from</a>
+                                <Link to="/blog" class="h5 lh-base my-auto h-100 p-3">How to get more test in your food from</Link>
                             </div>
                         </div>
                     </div>
@@ -37,7 +38,7 @@ const BlogSection = () => {
                                         <p class="fw-bold mb-0">Sep</p>
                                     </div>
                                 </div>
-                                <a href="#" class="h5 lh-base my-auto h-100 p-3">How to get more test in your food from</a>
+                                <Link to="/blog" class="h5 lh-base my-auto h-100 p-3">How to get more test in your food from</Link>
                             </div>
                         </div>
                     </div>
@@ -53,7 +54,7 @@ const BlogSection = () => {
                                         <p class="fw-bold mb-0">Sep</p>
                                     </div>
                                 </div>
-                                <a href="#" class="h5 lh-base my-auto h-100 p-3">How to get more test in your food from</a>
+                                <Link to="/blog" class="h5 lh-base my-auto h-100 p-3">How to get more test in your food from</Link>
                             </div>
                         </div>
                     </div>
