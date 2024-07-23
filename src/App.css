@@ -10,10 +10,6 @@
   font-style: italic;
 }
 
-@font-face {
-  font-family: hindifont;
-  src: url(../src/fonts/AgraBold.ttf);
-}
 
 .hindi-font {
   font-family: hindifont;
