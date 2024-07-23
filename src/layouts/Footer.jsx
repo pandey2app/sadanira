@@ -33,9 +33,9 @@ const Footer = () => {
                         <div class="footer-item">
                             <h4 class="mb-4">Contact Us</h4>
                             <div class="d-flex flex-column align-items-start">
-                                <p><i class="fa fa-map-marker-alt text-primary me-2"></i>Karwatahi Bazar, Gopalganj Bihar, India</p>
-                                <p><i class="fa fa-phone-alt text-primary me-2"></i>(+91) 8651419161</p>
-                                <p><i class="fas fa-envelope text-primary me-2"></i>admin@sadanira.com</p>
+                                <p><i class="fa fa-map-marker-alt text-primary me-2"></i> Karwatahi Bazar, Gopalganj Bihar, India</p>
+                                <p><i class="fa fa-phone-alt text-primary me-2"></i> (+91) 8651419161</p>
+                                <p><i class="fas fa-envelope text-primary me-2"></i> admin@sadanira.com</p>
                                 {/* <p><i class="fa fa-clock text-primary me-2"></i>  Service</p> */}
                             </div>
                         </div>
