@@ -21,16 +21,25 @@ const Navbar = () => {
                                 <Link to="/" class="nav-item nav-link">Home</Link>
                                 <Link to="/about-us" class="nav-item nav-link">About</Link>
                                 <Link to="/events" class="nav-item nav-link">Events</Link>
-                                <Link to="/gallery" class="nav-item nav-link">Gallery</Link>
                                 <div class="nav-item dropdown">
-                                    <p class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</p>
+                                    <p class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Creaters</p>
                                     <div class="dropdown-menu bg-light">
-                                        <Link to="book.html" class="dropdown-item">Booking</Link>
-                                        <Link to="blog.html" class="dropdown-item">Our Blog</Link>
-                                        <Link to="team.html" class="dropdown-item">Our Team</Link>
-                                        <Link to="testimonial.html" class="dropdown-item">Testimonial</Link>
+                                        <Link to="/writers" class="dropdown-item">Writers</Link>
+                                        <Link to="/poets" class="dropdown-item">Poets</Link>
+                                        <Link to="/singers" class="dropdown-item">Singers</Link>
+                                        <Link to="/actors" class="dropdown-item">Actors</Link>
                                     </div>
                                 </div>
+                                <div class="nav-item dropdown">
+                                    <p class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Category</p>
+                                    <div class="dropdown-menu bg-light">
+                                        <Link to="story" class="dropdown-item">Story</Link>
+                                        <Link to="poem" class="dropdown-item">Poem</Link>
+                                        <Link to="nibandh" class="dropdown-item">Nibandh</Link>
+                                        <Link to="jivani" class="dropdown-item">Jivani</Link>
+                                    </div>
+                                </div>
+                                <Link to="/gallery" class="nav-item nav-link">Gallery</Link>
                                 <Link to="/contact-us" class="nav-item nav-link">Contact</Link>
                             </div>
                             <button class="btn-search btn btn-primary btn-md-square me-4 rounded-circle d-none d-lg-inline-flex" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
