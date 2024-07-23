@@ -142,6 +142,11 @@ h4, h5, h6, .h4, .h5, .h6 {
         opacity: 1;
     }
 }
+.dropdown .dropdown-menu a{
+    color: rgba(37, 41, 2, 0.723);
+    font-size: 18px;
+    font-weight: 600;
+}
 
 .dropdown .dropdown-menu a:hover {
     background: var(--bs-primary);
