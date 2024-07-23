@@ -20,7 +20,15 @@ const Navbar = () => {
                             <div class="navbar-nav font-monospace mx-auto mt-3">
                                 <Link to="/" class="nav-item nav-link">Home</Link>
                                 <Link to="/about-us" class="nav-item nav-link">About</Link>
-                                <Link to="/events" class="nav-item nav-link">Events</Link>
+                                <div class="nav-item dropdown">
+                                    <p class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Events</p>
+                                    <div class="dropdown-menu bg-light">
+                                        <Link to="/sadaneera-mahotsav" class="dropdown-item">Sadaneera Mahotsav</Link>
+                                        <Link to="/kabaddi" class="dropdown-item">Ganwai Kabaddi Pratiyogita</Link>
+                                        <Link to="/aarogyam" class="dropdown-item">Aarogyam 'free medical camp'</Link>
+                                        <Link to="/reading-marathon" class="dropdown-item">Reading Marathon</Link>
+                                    </div>
+                                </div>
                                 <div class="nav-item dropdown">
                                     <p class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Creaters</p>
                                     <div class="dropdown-menu bg-light">
