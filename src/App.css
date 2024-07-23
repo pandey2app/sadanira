@@ -1,0 +1,23 @@
+.tiro-devanagari-hindi-regular {
+  font-family: "Tiro Devanagari Hindi", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tiro-devanagari-hindi-regular-italic {
+  font-family: "Tiro Devanagari Hindi", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: hindifont;
+  src: url(../src/fonts/AgraBold.ttf);
+}
+
+.hindi-font {
+  font-family: hindifont;
+}
+.text-red{
+  color: 'red' !important
+}
