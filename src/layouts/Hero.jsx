@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Hero = () => {
     return (
-        <div class="container-fluid bg-light py-6 my-6 mt-0"
+        <div class="container-fluid bg-light py-3 my-3 mt-0"
             // style={{
             //     backgroundImage: "url(img/banner-big.jpg)",
             //     backgroundSize: 'contain',
