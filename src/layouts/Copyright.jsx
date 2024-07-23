@@ -10,7 +10,7 @@ const Copyright = () => {
                         <span class="text-light"><Link to="/"><i class="fas fa-copyright text-light me-2"></i> team@sadanira</Link>, All right reserved.</span>
                     </div>
                     <div class="col-md-6 my-auto text-center font-monospace text-sm-end text-white">
-                        Designed By <Link to='https://github.com/nazishshaheen' class="border-bottom"> Nazish@Ramish</Link> Distributed By <Link to='https://github.com/pandey2app' class="border-bottom" href="#">pandey2app</Link>
+                        Designed By <Link to='https://github.com/nazishshaheen' class="border-bottom"> nazish@ramish</Link> Distributed By <Link to='https://github.com/pandey2app' class="border-bottom" href="#">pandey2app</Link>
                     </div>
                 </div>
             </div>
