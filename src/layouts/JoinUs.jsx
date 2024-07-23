@@ -78,7 +78,7 @@ const JoinUs = () => {
                         </div>
                     </div>
                     <div class="col-1">
-                        <img src="img/background-site.jpg" class="img-fluid h-100 w-100 rounded-end" style={{ objectFit: "cover", transform: `rotate(180deg)`, opacity: "0.8" }} alt="" />
+                        <img src="img/background-site.jpg" class="img-fluid h-100 w-100 rounded-start" style={{ objectFit: "cover", transform: `rotate(180deg)`, opacity: "0.8" }} alt="" />
                     </div>
                 </div>
             </div>
