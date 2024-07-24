@@ -23,32 +23,32 @@ const Navbar = () => {
                                 <div class="nav-item dropdown">
                                     <p class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Events</p>
                                     <div class="dropdown-menu bg-light">
-                                        <Link to="/sadaneera-mahotsav" class="dropdown-item">Sadaneera Mahotsav</Link>
-                                        <Link to="/kabaddi" class="dropdown-item">Ganwai Kabaddi Pratiyogita</Link>
-                                        <Link to="/aarogyam" class="dropdown-item">Aarogyam 'free medical camp'</Link>
-                                        <Link to="/reading-marathon" class="dropdown-item">Reading Marathon</Link>
+                                        <Link to="events/sadaneera-mahotsav" class="dropdown-item">Sadaneera Mahotsav</Link>
+                                        <Link to="events/kabaddi-pratiyogita" class="dropdown-item">Ganwai Kabaddi Pratiyogita</Link>
+                                        <Link to="events/aarogyam" class="dropdown-item">Aarogyam 'free medical camp'</Link>
+                                        <Link to="events/reading-marathon" class="dropdown-item">Reading Marathon</Link>
                                     </div>
                                 </div>
                                 <div class="nav-item dropdown">
                                     <p class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Creaters</p>
                                     <div class="dropdown-menu bg-light">
-                                        <Link to="/writers" class="dropdown-item">Writers</Link>
-                                        <Link to="/poets" class="dropdown-item">Poets</Link>
-                                        <Link to="/singers" class="dropdown-item">Singers</Link>
-                                        <Link to="/actors" class="dropdown-item">Actors</Link>
+                                        <Link to="creaters/writers" class="dropdown-item">Writers</Link>
+                                        <Link to="creaters/poets" class="dropdown-item">Poets</Link>
+                                        <Link to="creaters/singers" class="dropdown-item">Singers</Link>
+                                        <Link to="creaters/actors" class="dropdown-item">Actors</Link>
                                     </div>
                                 </div>
                                 <div class="nav-item dropdown">
                                     <p class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Category</p>
                                     <div class="dropdown-menu bg-light">
-                                        <Link to="story" class="dropdown-item">Story</Link>
-                                        <Link to="poem" class="dropdown-item">Poem</Link>
-                                        <Link to="nibandh" class="dropdown-item">Nibandh</Link>
-                                        <Link to="jivani" class="dropdown-item">Jivani</Link>
+                                        <Link to="categories/story" class="dropdown-item">Story</Link>
+                                        <Link to="categories/poem" class="dropdown-item">Poem</Link>
+                                        <Link to="categories/nibandh" class="dropdown-item">Nibandh</Link>
+                                        <Link to="categories/jivani" class="dropdown-item">Jivani</Link>
                                     </div>
                                 </div>
                                 <Link to="/gallery" class="nav-item nav-link">Gallery</Link>
-                                <Link to="/contact-us" class="nav-item nav-link">Members</Link>
+                                <Link to="/members" class="nav-item nav-link">Members</Link>
                             </div>
                             <button class="btn-search btn btn-primary btn-md-square me-4 rounded-circle d-none d-lg-inline-flex" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
                             <Link href="join" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill">Join Now</Link>
