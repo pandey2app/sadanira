@@ -41,10 +41,10 @@ const Navbar = () => {
                                 <div class="nav-item dropdown">
                                     <p class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Category</p>
                                     <div class="dropdown-menu bg-light">
-                                        <Link to="categories/story" class="dropdown-item">Story</Link>
-                                        <Link to="categories/poem" class="dropdown-item">Poem</Link>
-                                        <Link to="categories/nibandh" class="dropdown-item">Nibandh</Link>
-                                        <Link to="categories/jivani" class="dropdown-item">Jivani</Link>
+                                        <Link to="category/story" class="dropdown-item">Story</Link>
+                                        <Link to="category/poem" class="dropdown-item">Poem</Link>
+                                        <Link to="category/nibandh" class="dropdown-item">Nibandh</Link>
+                                        <Link to="category/jivani" class="dropdown-item">Jivani</Link>
                                     </div>
                                 </div>
                                 <Link to="/gallery" class="nav-item nav-link">Gallery</Link>

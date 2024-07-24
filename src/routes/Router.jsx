@@ -44,7 +44,7 @@ const Router = () => {
           <Route path='actors' element={<Creaters type='actors' />}/>
       </Route>
 
-      <Route path='categories' element={<Categories type='all'/>}>
+      <Route path='category' element={<Categories type='all'/>}>
           <Route path='writers' element={<Categories type='writers' />}/>
           <Route path='poets' element={<Categories type='poets' />}/>
           <Route path='singers' element={<Categories type='singers' />}/>
