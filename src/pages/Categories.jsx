@@ -1,9 +1,11 @@
 import React, { useEffect } from 'react'
+import { useParams } from 'react-router-dom'
 
-const Categories = ({ type }) => {
+const Categories = () => {
+    const {type} = useParams()
 
     useEffect(()=>{
-
+        console.log(type)
     },[type])
     return (
         <>

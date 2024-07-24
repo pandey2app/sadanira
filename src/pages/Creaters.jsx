@@ -1,9 +1,12 @@
 import React, { useEffect } from 'react'
+import { useParams } from 'react-router-dom'
 
-const Creaters = ({type}) => {
+const Creaters = () => {
+  const {type} = useParams()
 
-  
+
   useEffect(()=>{
+        console.log(type)
 
   },[type])
   return (

@@ -37,19 +37,9 @@ const Router = () => {
         <Route path="reading-marathon" element={<ReadingMarathon />} />
       </Route>
 
-      <Route path='creaters' element={<Creaters type='all'/>}>
-          <Route path='writers' element={<Creaters type='writers' />}/>
-          <Route path='poets' element={<Creaters type='poets' />}/>
-          <Route path='singers' element={<Creaters type='singers' />}/>
-          <Route path='actors' element={<Creaters type='actors' />}/>
-      </Route>
+      <Route path='creaters/:type' element={<Creaters />}/>
 
-      <Route path='category' element={<Categories type='all'/>}>
-          <Route path='writers' element={<Categories type='writers' />}/>
-          <Route path='poets' element={<Categories type='poets' />}/>
-          <Route path='singers' element={<Categories type='singers' />}/>
-          <Route path='actors' element={<Categories type='actors' />}/>
-      </Route>
+      <Route path='category/:type' element={<Categories />}/>
 
       <Route path="*" element={<NotFound />} />
     </Routes>
