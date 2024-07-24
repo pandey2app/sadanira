@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 
 const Categories = () => {
-    const {type} = useParams()
+    const type = useParams().type ?? 'all'
 
     useEffect(()=>{
         console.log(type)

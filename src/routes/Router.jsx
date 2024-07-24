@@ -37,9 +37,9 @@ const Router = () => {
         <Route path="reading-marathon" element={<ReadingMarathon />} />
       </Route>
 
-      <Route path='creaters/:type' element={<Creaters />}/>
+      <Route path='creaters/:type?' element={<Creaters />}/>
 
-      <Route path='category/:type' element={<Categories />}/>
+      <Route path='category/:type?' element={<Categories />}/>
 
       <Route path="*" element={<NotFound />} />
     </Routes>
