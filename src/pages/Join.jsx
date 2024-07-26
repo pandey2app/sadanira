@@ -1,8 +1,11 @@
 import React from 'react'
+import JoinUs from '../layouts/JoinUs'
 
 const Join = () => {
   return (
-    <div>Join</div>
+    <>
+    <JoinUs />
+    </>
   )
 }
 

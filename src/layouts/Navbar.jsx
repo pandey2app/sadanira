@@ -32,6 +32,7 @@ const Navbar = () => {
                                 <div class="nav-item dropdown">
                                     <p class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Creaters</p>
                                     <div class="dropdown-menu bg-light">
+                                        <Link to="creaters" class="dropdown-item">All</Link>
                                         <Link to="creaters/writers" class="dropdown-item">Writers</Link>
                                         <Link to="creaters/poets" class="dropdown-item">Poets</Link>
                                         <Link to="creaters/singers" class="dropdown-item">Singers</Link>
@@ -51,7 +52,7 @@ const Navbar = () => {
                                 <Link to="/members" class="nav-item nav-link">Members</Link>
                             </div>
                             <button class="btn-search btn btn-primary btn-md-square me-4 rounded-circle d-none d-lg-inline-flex" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
-                            <Link href="join" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill">Join Now</Link>
+                            <Link to="join" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill">Join Now</Link>
                         </div>
                     </nav>
                 </div>

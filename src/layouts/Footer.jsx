@@ -2,14 +2,14 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div class="container-fluid footer py-3 my-6 mw-100 mb-0 bg-light wow bounceInUp" data-wow-delay="0.1s">
+    <div class="container-fluid footer py-3 my-5 mw-100 mb-0 bg-light wow bounceInUp" data-wow-delay="0.1s">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-item">
                             {/* <h1 class="text-primary">Cater<span class="text-dark">Serv</span></h1> */}
-                            <img src="img/logo/header-text.png" height='50px' alt="Sadanira" />
-                            <p class="lh-lg mb-4">The Sadanira Mahotsav stands as a testament to the power of literature, foster growth, and nurture a love for the written word in even the most remote of places.</p>
+                            <img src="img/logo/header-text.png" height='40px' alt="Sadanira" />
+                            <p class="lh-lg my-2 fs-6  text-dark" >सदानीरा महोत्सव साहित्य की शक्ति, विकास को बढ़ावा देने और सबसे दूरस्थ स्थानों में भी साहित्य के प्रति प्रेम को बढ़ावा देने का एक प्रमाण है।</p>
                             <div class="footer-icon d-flex">
                                 <a class="btn btn-primary btn-sm-square me-2 rounded-circle" href="facebook.com"><i class="fab fa-facebook-f"></i></a>
                                 <a class="btn btn-primary btn-sm-square me-2 rounded-circle" href="facebook.com"><i class="fab fa-twitter"></i></a>

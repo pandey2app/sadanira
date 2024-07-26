@@ -1,3 +1,7 @@
+body {
+  font-family: 'Noto Sans Devanagari', sans-serif;
+}
+
 .tiro-devanagari-hindi-regular {
   font-family: "Tiro Devanagari Hindi", serif;
   font-weight: 400;
