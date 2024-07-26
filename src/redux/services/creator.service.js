@@ -1,7 +1,7 @@
-import { collection, addDoc, getDocs, doc, updateDoc, deleteDoc } from 'firebase/firestore';
-import { db } from '../../firebaseConfig';
+// import { collection, addDoc, getDocs, doc, updateDoc, deleteDoc } from 'firebase/firestore';
+// import { db } from '../../firebaseConfig';
 
-const collectionName = "creators"
+// const collectionName = "creators"
 
 export const getCreatorFromAPI = async () => {
     // const creators = []
@@ -17,15 +17,15 @@ export const getCreatorFromAPI = async () => {
 }
 
 export const addCreatorToAPI = async (creator) => {
-    const docRef = await addDoc(collection(db, collectionName), creator);
-    console.log("Document written with ID: ", docRef.id);
+//     const docRef = await addDoc(collection(db, collectionName), creator);
+//     console.log("Document written with ID: ", docRef.id);
 }
 
 export const updateCreatorToAPI = async (creator, id) => {
-    const creatorRef = doc(db, collectionName, id);
-    await updateDoc(creatorRef, creator)
+//     const creatorRef = doc(db, collectionName, id);
+//     await updateDoc(creatorRef, creator)
 }
 
 export const deleteCreatorFromAPI = async (id) => {
-    await deleteDoc(doc(db, collectionName, id));
+//     await deleteDoc(doc(db, collectionName, id));
 }
