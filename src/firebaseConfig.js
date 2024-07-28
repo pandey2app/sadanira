@@ -8,14 +8,13 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyBYhaQa_DQaD8rZeyhcXWuQrSFpzLgEDtY",
-    authDomain: "sadaneera-38cc8.firebaseapp.com",
-    projectId: "sadaneera-38cc8",
-    storageBucket: "sadaneera-38cc8.appspot.com",
-    messagingSenderId: "580392324688",
-    appId: "1:580392324688:web:3c6c426a4b023072d70b55",
-    measurementId: "G-53Z9YFJYQV"
-};
+    apiKey: "AIzaSyBnaCPH8nUKnUhqOkn8P7lZCPiuBb9t6HY",
+    authDomain: "sadaneera-15fac.firebaseapp.com",
+    projectId: "sadaneera-15fac",
+    storageBucket: "sadaneera-15fac.appspot.com",
+    messagingSenderId: "982910592877",
+    appId: "1:982910592877:web:16370b0dd16a8d6f455c64"
+  };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);

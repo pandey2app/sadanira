@@ -1,0 +1,49 @@
+.tiroDevanagariItalic {
+    font-family: "Tiro Devanagari Hindi", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.tiroDevanagariIegular {
+    font-family: "Tiro Devanagari Hindi", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.karmaLight {
+    font-family: "Karma", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.karmaRegular {
+    font-family: "Karma", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.karmaMedium {
+    font-family: "Karma", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.karmaSemibold {
+    font-family: "Karma", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.karmaBold {
+    font-family: "Karma", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+.balooHeadings{
+    font-family: "Baloo 2", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 780;
+    font-style: normal;
+}

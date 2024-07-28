@@ -1,4 +1,5 @@
 import React from 'react'
+import styles from '../layouts/fonts.module.css'
 
 const About = () => {
   return (
@@ -7,7 +8,7 @@ const About = () => {
         <img src="img/logo/logo-big.png" className="" alt="" />
       </div>
       <div>
-        <h2 className='fw-bold fs-1 wow bounceInUp text-center bg-primary py-2 ' style={{ fontFamily: "'Baloo 2', cursive" }}>सदानीरा महोत्सव</h2>
+        <h2 className={`fw-bold fs-1 wow bounceInUp text-center bg-primary py-2 ${styles.balooHeadings}`}>सदानीरा महोत्सव</h2>
         <div className='container wow bounceInUp my-4 text-dark fs-4'>
           <p>
             पाश्चात्य संक्रमण से मरते सामाजिक मूल्यों की पुनर्स्थापना की जिद्द का नाम है सदानीरा उत्सव! एक प्रयास है कि गाँव के चौक चौराहे पर खड़े हो कर अश्लील गीतों पर चर्चा करते लड़कों की टोली दिनकर की कविताओं और रेणु की कहानियों पर चर्चा करे। हम प्रयासरत हैं कि बिहार का वह ग्रामीण क्षेत्र जो कभी अपराधियो की गोलियों की तड़तड़ाहट के लिए जाना जाता था, वह अब देश के मशहूर कवियों की कविताओं पर अनायास ही गूंज उठने वाली तालियों के लिए जाना जाय।

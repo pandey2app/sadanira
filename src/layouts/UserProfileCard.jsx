@@ -18,31 +18,31 @@ const UserProfileCard = ({creator}) => {
                         {/* <p className={`${Styles.job_description}`}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam atque, ipsam a amet laboriosam eligendi.</p> */}
                     </div>
                     <div className={`${Styles.icons}`}>
-                        <button>
+                        <button className={`${Styles.iconsButton}`}>
                             <ion-icon name="logo-dribbble"></ion-icon>
                         </button>
-                        <button>
+                        <button className={`${Styles.iconsButton}`}>
                             <ion-icon name="logo-instagram"></ion-icon>
                         </button>
-                        <button>
+                        <button className={`${Styles.iconsButton}`}>
                             <ion-icon name="logo-twitter"></ion-icon>
                         </button>
-                        <button>
+                        <button className={`${Styles.iconsButton}`}>
                             <ion-icon name="logo-linkedin"></ion-icon>
                         </button>
-                        <button>
+                        <button className={`${Styles.iconsButton}`}>
                             <ion-icon name="logo-facebook"></ion-icon>
                         </button>
-                        <button>
+                        <button className={`${Styles.iconsButton}`}>
                             <ion-icon name="logo-behance"></ion-icon>
                         </button>
                     </div>
                     <div className={`${Styles.button}`}>
                         <div>
-                            <button className={`${Styles.message}`} type="button">Message</button>
+                            <button className={`${Styles.message} ${Styles.connectionButton}`} type="button">About</button>
                         </div>
                         <div>
-                            <button className={`${Styles.connect}`} type="button">Connect</button>
+                            <button className={`${Styles.connect} ${Styles.connectionButton}`} type="button">Posts</button>
                         </div>
                     </div>
                 </div>

@@ -1,14 +1,19 @@
-import React, { useCallback, useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useMemo, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import UserProfileCard from '../layouts/UserProfileCard'
 import { useDispatch, useSelector } from 'react-redux'
 import { getCreatorStart } from '../redux/actions/creator.action'
+
 
 const Creaters = () => {
   const dispatch = useDispatch();
   const creators = useSelector((state) => state.creator.creators)
   const type = useParams().type ?? 'all'
   const [filteredCreators, setFilteredCreators] = useState([])
+  
+  useMemo(()=>{
+    dispatch(getCreatorStart())
+  },[dispatch])
 
   const filterCreators = useCallback(() => {
     setFilteredCreators([...creators])
@@ -25,11 +30,11 @@ const Creaters = () => {
       setFilteredCreators(creators.filter((creator) => creator.artform.toLowerCase() === 'actor'))
     }
   }, [type, creators]);
-
+  
   useEffect(() => {
-    dispatch(getCreatorStart())
     filterCreators()
-  }, [type, dispatch, filterCreators])
+  }, [type, filterCreators])
+
   return (
     <section className='p-4 '>
       <h3 className='text-center px-2 mb-3 text-success text-bold'>Total {filteredCreators.length} {type === 'all'? 'Creators': type} are available now on sadaneera!</h3>
