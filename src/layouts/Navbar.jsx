@@ -42,6 +42,7 @@ const Navbar = () => {
                                 <div class="nav-item dropdown">
                                     <p class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Category</p>
                                     <div class="dropdown-menu bg-light">
+                                        <Link to="category" class="dropdown-item">All</Link>
                                         <Link to="category/story" class="dropdown-item">Story</Link>
                                         <Link to="category/poem" class="dropdown-item">Poem</Link>
                                         <Link to="category/nibandh" class="dropdown-item">Nibandh</Link>

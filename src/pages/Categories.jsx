@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
+import StoryCard from '../layouts/StoryCard'
 
 const Categories = () => {
     const type = useParams().type ?? 'all'
@@ -9,7 +10,7 @@ const Categories = () => {
     },[type])
     return (
         <>
-            <h1>{type}</h1>
+            <StoryCard />
         </>
     )
 }
