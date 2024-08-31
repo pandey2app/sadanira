@@ -31,9 +31,10 @@ const userValidationSchema = yup.object({
         .required('Please select your birth date')
         .max(tenYearsAgo, 'You must be at least 10 years old')
         .typeError('Please enter a valid date'),
-    country: yup
+    gender: yup
         .string()
-        .required('Country must be provided'),
+        .oneOf(['male', 'female'], 'gender must be either male or female, else other')
+        .required('Gender must be provided'),
     state: yup
         .string()
         .required('State must be provided'),
@@ -49,6 +50,7 @@ const userValidationSchema = yup.object({
         .oneOf(['user', 'writer', 'poet', 'actor', 'singer'], 'The category should be only user, writer, poet, actor, singer')
         .default('user'),
     art: yup.string().default('reader'),
+    objective: yup.string().default('joined to empower society'),
     isActive: yup.boolean().default(true),
     createdAt: yup.date().default(() => new Date().toLocaleString()),
     updatedAt: yup.date()
