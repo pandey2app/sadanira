@@ -50,7 +50,7 @@ const JoinUs = () => {
                                 </div>
                                 <div className="col-lg-4 col-md-6">
                                     <select className="form-select border-primary p-2" aria-label="Default select example" name='state' value={formData.state} onChange={inputChange}>
-                                        <option disabled>Select State</option>
+                                        <option defaultValue>Select State</option>
                                         <option value="1">Depend On Country</option>
                                         <option value="2">UK</option>
                                         <option value="3">India</option>
@@ -58,16 +58,15 @@ const JoinUs = () => {
                                 </div>
                                 <div className="col-lg-4 col-md-6">
                                     <select className="form-select border-primary p-2" aria-label="Default select example" name='district' value={formData.district} onChange={inputChange}> 
-                                        <option disabled>Select District</option>
+                                        <option defaultValue>Select District</option>
                                         <option value="1">Gopalganj</option>
                                         <option value="2">Siwan</option>
                                         <option value="3">Chhapra</option>
                                     </select>
                                 </div>
                                 <div className="col-lg-4 col-md-6">
-                                    <select className="form-select border-primary p-2" name='userCategory' aria-label="Default select example" value={formData.district} onChange={inputChange}>
-                                        <option disabled>Category</option>
-                                        <option value='Reader'>Reader</option>
+                                    <select className="form-select border-primary p-2" name='userCategory' aria-label="Default select example" value={formData.userCategory} onChange={inputChange}>
+                                        <option defaultValue value='user'>Select Category</option>
                                         <option value='Poet'>Poet</option>
                                         <option value='Writer'>Writer</option>
                                         <option value='Actor'>Actor</option>
@@ -75,8 +74,8 @@ const JoinUs = () => {
                                     </select>
                                 </div>
                                 <div className="col-lg-4 col-md-6">
-                                    <select className="form-select border-primary p-2" name='art' aria-label="Default select example">
-                                        <option disabled>Art</option>
+                                    <select className="form-select border-primary p-2" name='art' aria-label="Default select example" value={formData.art} onChange={inputChange}>
+                                        <option defaultValue>Select Art</option>
                                         <option value='1'>Education</option>
                                         <option value="2">Engineering</option>
                                         <option value="3">Administration</option>
