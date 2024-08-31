@@ -6,7 +6,7 @@ import { addUserStart } from '../redux/actions/user.action'
 
 const JoinUs = () => {
     const dispatch = useDispatch()
-    const [formData, setFormData, inputChange] = useFormData(userInitialState)
+    const [formData, , inputChange] = useFormData(userInitialState)
 
     const handleSubmit =(e)=>{
         e.preventDefault()

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useCallback, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { getUserStart } from '../redux/actions/user.action'
 import UserProfileCard from '../layouts/UserProfileCard'
@@ -7,9 +7,12 @@ const Members = () => {
   const dispatch = useDispatch()
   const users = useSelector((state) => state.user.users)
 
-  useEffect(() =>{
+  const getUsers = useCallback(()=>{
     dispatch(getUserStart())
-  },[])
+  },[dispatch])
+  useEffect(() =>{
+    getUsers()
+  },[getUsers])
   return (
     <>
       <section className='p-4 '>

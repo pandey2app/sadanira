@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useFormData } from '../hooks/useFormData';
 import { contactUsInitial } from '../forms/initialStates/contactUsInitial';
 
 const Contact = () => {
-    const [formData, setFormData, inputChange] = useFormData(contactUsInitial)
+    const [formData, , inputChange] = useFormData(contactUsInitial)
 
     
 
