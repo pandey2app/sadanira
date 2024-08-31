@@ -1,19 +1,33 @@
-import React, { useRef } from 'react'
+import React, { useCallback, useEffect, useRef, useState } from 'react'
 import { useFormData } from '../hooks/useFormData'
 import { userInitialState } from '../forms/initialStates/userInitialState'
 import { useDispatch } from 'react-redux'
 import { addUserStart } from '../redux/actions/user.action'
+import { indianStatesAndUTs } from '../forms/data/states'
+import { indianDistricts } from '../forms/data/districts'
 
 const JoinUs = () => {
     const dispatch = useDispatch()
     const artInput = useRef()
     const [formData, , inputChange] = useFormData(userInitialState)
+    const [districts, setDistricts] = useState([])
+
+    const districtHandler = useCallback(()=>{
+        if (formData.state){
+            const state = indianStatesAndUTs.find(state=>state.value === formData.state)   
+            setDistricts([...indianDistricts[state.code]])
+        }
+    },[formData.state])
 
     const handleSubmit = (e) => {
         e.preventDefault()
         console.log(formData)
         dispatch(addUserStart(formData))
     }
+
+    useEffect(() => {
+        districtHandler()
+    },[formData.state, districtHandler])
 
     return (
         <div className="container-fluid contact py-3 wow bounceInUp" data-wow-delay="0.1s">
@@ -58,19 +72,23 @@ const JoinUs = () => {
                                     <input type="password" className="form-control border-primary p-2" name='password' placeholder="Your password." value={formData.password} onChange={inputChange} />
                                 </div>
                                 <div className="col-lg-4 col-md-6">
-                                    <select className="form-select border-primary p-2" aria-label="Default select example" name='state' value={formData.state} onChange={inputChange}>
+                                    <select className="form-select border-primary p-2" aria-label="Default select example" name='state' value={formData.state} onChange={inputChange} >
                                         <option defaultValue>Select State</option>
-                                        <option value="1">Depend On Country</option>
-                                        <option value="2">UK</option>
-                                        <option value="3">India</option>
+                                        {
+                                             indianStatesAndUTs.map((state, index) => (
+                                                 <option key={index} value={state.value} title={state.code}>{state.name}</option>
+                                             ))
+                                        }
                                     </select>
                                 </div>
                                 <div className="col-lg-4 col-md-6">
                                     <select className="form-select border-primary p-2" aria-label="Default select example" name='district' value={formData.district} onChange={inputChange}>
                                         <option defaultValue>Select District</option>
-                                        <option value="1">Gopalganj</option>
-                                        <option value="2">Siwan</option>
-                                        <option value="3">Chhapra</option>
+                                        {
+                                             districts.length && districts.map((district, index) => (
+                                                 <option key={index} value={district.value}>{district.name}</option>
+                                             ))
+                                        }
                                     </select>
                                 </div>
                                 <div className="col-lg-4 col-md-6">
