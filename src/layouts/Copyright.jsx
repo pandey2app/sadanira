@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom'
 
 const Copyright = () => {
   return (
-    <div class="container-fluid copyright bg-dark py-4">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        <span class="text-light"><Link to="/"><i class="fas fa-copyright text-light me-2"></i> team@sadanira</Link>, All right reserved.</span>
+    <div className="container-fluid copyright bg-dark py-4">
+            <div className="container">
+                <div className="row">
+                    <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        <span className="text-light"><Link to="/"><i className="fas fa-copyright text-light me-2"></i> team@sadanira</Link>, All right reserved.</span>
                     </div>
-                    <div class="col-md-6 my-auto text-center font-monospace text-sm-end text-white">
-                        Designed By <Link to='https://github.com/nazishshaheen' class="border-bottom"> nazish@ramish</Link> Developed By <Link to='https://github.com/pandey2app' class="border-bottom" href="#">pandey2app</Link>
+                    <div className="col-md-6 my-auto text-center font-monospace text-sm-end text-white">
+                        Designed By <Link to='https://github.com/nazishshaheen' className="border-bottom"> nazish@ramish</Link> Developed By <Link to='https://github.com/pandey2app' className="border-bottom" href="#">pandey2app</Link>
                     </div>
                 </div>
             </div>

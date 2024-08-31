@@ -1,5 +1,6 @@
 import React from 'react'
 import Styles from './creatersCard.module.css'
+import { Link } from 'react-router-dom'
 
 const UserProfileCard = ({creator}) => {
     return (
@@ -10,7 +11,7 @@ const UserProfileCard = ({creator}) => {
                         <img src={creator.image} alt={`${creator.name}`} />
                     </div>
                     <div className={`${Styles.level}`}>
-                        <p>{creator.membershipType}</p>
+                        {creator.membershipType?<p>{creator.membershipType}</p>:<p>{creator.userCategory}</p>}
                     </div>
                     <div className={`${Styles.text}`}>
                         <p className={`${Styles.name}`}>{creator.name}</p>
@@ -19,7 +20,7 @@ const UserProfileCard = ({creator}) => {
                     </div>
                     <div className={`${Styles.icons}`}>
                         <button className={`${Styles.iconsButton}`}>
-                            <ion-icon name="logo-dribbble"></ion-icon>
+                            <Link to={`https://mail.google.com/mail/?view=cm&fs=1&to=${creator.email}`} target='blank'><ion-icon name="mail-outline"></ion-icon></Link>
                         </button>
                         <button className={`${Styles.iconsButton}`}>
                             <ion-icon name="logo-instagram"></ion-icon>

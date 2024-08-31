@@ -7,7 +7,7 @@ const initialState = {
 export const userReducer = (state = initialState, action )=>{
     switch (action.type) {
         case GET_USER_SUCCESS: 
-        localStorage.setItem("users",JSON.stringify(action.payload))
+        sessionStorage.setItem("users",JSON.stringify(action.payload))
         return{
             ...state,
             users: [...action.payload]

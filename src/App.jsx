@@ -22,7 +22,9 @@ function App() {
     setTimeout(() => {
       setIsLoading(false);
     }, 500)
+
   }, []);
+  
   return (
     <>
       {isLoading ?
@@ -36,7 +38,7 @@ function App() {
           <Router />
           <Footer />
           <Copyright />
-          <p onClick={goToTop} class="btn btn-md-square btn-primary rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></p>
+          <p onClick={goToTop} className="btn btn-md-square btn-primary rounded-circle back-to-top"><i className="fa fa-arrow-up"></i></p>
         </>
       }
     </>
