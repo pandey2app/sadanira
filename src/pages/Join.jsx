@@ -4,7 +4,7 @@ import JoinUs from '../layouts/JoinUs'
 const Join = () => {
   return (
     <>
-    <JoinUs />
+      <JoinUs />
     </>
   )
 }

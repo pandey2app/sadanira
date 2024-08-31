@@ -53,7 +53,7 @@ const Navbar = () => {
                                 <Link to="/members" className="nav-item nav-link">Members</Link>
                             </div>
                             <button className="btn-search btn btn-primary btn-md-square me-4 rounded-circle d-none d-lg-inline-flex" data-bs-toggle="modal" data-bs-target="#searchModal"><i className="fas fa-search"></i></button>
-                            <Link to="join" className="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill">Join Now</Link>
+                            <Link to="/join" className="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill">Join Now</Link>
                         </div>
                     </nav>
                 </div>
