@@ -67,10 +67,10 @@ const JoinUs = () => {
                                 <div className="col-lg-4 col-md-6">
                                     <select className="form-select border-primary p-2" name='userCategory' aria-label="Default select example" value={formData.userCategory} onChange={inputChange}>
                                         <option defaultValue value='user'>Select Category</option>
-                                        <option value='Poet'>Poet</option>
-                                        <option value='Writer'>Writer</option>
-                                        <option value='Actor'>Actor</option>
-                                        <option value='Singer'>Singer</option>
+                                        <option value='poet'>Poet</option>
+                                        <option value='writer'>Writer</option>
+                                        <option value='actor'>Actor</option>
+                                        <option value='singer'>Singer</option>
                                     </select>
                                 </div>
                                 <div className="col-lg-4 col-md-6">
