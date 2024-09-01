@@ -1,19 +1,35 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useFormData } from '../hooks/useFormData';
 import { contactUsInitial } from '../forms/initialStates/contactUsInitial';
+import { contactUsValidation } from '../forms/validationSchema/contactUsValidation';
 
 const Contact = () => {
     const [formData, , inputChange] = useFormData(contactUsInitial)
+    const [errors, setErrors] = useState({})
+    const [successMessage, setSuccessMessage] = useState('')
+
 
     
 
 
     // Handle form submission
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log(formData);
-        
-        
+        try {
+            await contactUsValidation.validate(formData,{abortEarly:false})
+            console.log(formData);
+            setSuccessMessage('Your message has been sent successfully!')
+        } catch (error) {
+            const newErrors = {};
+            error.inner.forEach((error) => {
+                if(!newErrors[error.path]){
+                    newErrors[error.path] = error.message;
+                }
+            });
+            setSuccessMessage('')
+            setErrors(newErrors);
+        }  
+        console.log(errors);
     };
 
     return (
@@ -32,23 +48,27 @@ const Contact = () => {
                             <form onSubmit={handleSubmit} method='post' className="row g-4 form">
                                 <div className="col-lg-6 col-md-6">
                                     <input type="text" className="form-control border-primary p-2" name='name' placeholder="Your Name" value={formData.name} onChange={inputChange} />
+                                    {errors.name && <div className="text-danger mt-1 mb-0">{errors.name}</div>}                                 
                                 </div>
                                 <div className="col-lg-6 col-md-6">
                                     <input type="email" className="form-control border-primary p-2" name='email' placeholder="Your Email address" value={formData.email} onChange={inputChange} />
+                                    {errors.email && <div className="text-danger mt-1 mb-0">{errors.email}</div>}
                                 </div>
                                 <div className="col-lg-6 col-md-6">
                                     <input type="text" className="form-control border-primary p-2" name='mobile' placeholder="Your mobile number" value={formData.mobile} onChange={inputChange} />
+                                    {errors.mobile && <div className="text-danger mt-1 mb-0">{errors.mobile}</div>}
                                 </div>
                                 <div className="col-lg-6 col-md-6">
                                     <input type="text" className="form-control border-primary p-2" name='subject' placeholder="Subject" value={formData.subject} onChange={inputChange} />
+                                    {errors.subject && <div className="text-danger mt-1 mb-0">{errors.subject}</div>}
                                 </div>
                                 <div className="col-12">
                                     <textarea className="form-control border-primary p-2" name='message' placeholder="Your Message" rows="5" value={formData.message} onChange={inputChange}></textarea>
+                                    {errors.message && <div className="text-danger mt-1 mb-0">{errors.message}</div>}
                                 </div>
-                                {/* {successMessage && <div className="col-12 text-success text-center">{successMessage}</div>} */}
-                                {/* {errorMessage && <div className="col-12 text-danger text-center">{errorMessage}</div>} */}
                                 <div className="col-12 text-center">
                                     <button type="submit" className="btn btn-primary px-5 py-3 rounded-pill">Send Message</button>
+                                    {successMessage && <div className="text-success">{successMessage}</div>}
                                 </div>
                             </form>
                         </div>
