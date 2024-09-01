@@ -13,6 +13,6 @@ export const userInitialState = {
     art: '',
     objective: 'joined to empower the society!',
     isActive: true, 
-    createdAt: new Date(),
-    updatedAt: 'not updated yet' 
+    createdAt: new Date().toLocaleString(),
+    updatedAt: new Date().toLocaleString(), 
 };

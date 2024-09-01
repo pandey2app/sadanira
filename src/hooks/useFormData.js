@@ -22,7 +22,6 @@ export const useFormData = (initialState, ref) => {
             ...prevValue,
             [e.target.name]: e.target.value,
         }))
-        console.log(formData);
     };
 
     

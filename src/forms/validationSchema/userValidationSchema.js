@@ -62,7 +62,7 @@ const userValidationSchema = yup.object({
     objective: yup.string().default('joined to empower society!'),
     isActive: yup.boolean().default(true),
     createdAt: yup.date().default(() => new Date().toLocaleString()),
-    updatedAt: yup.string().default('Not updated yet!'),
+    updatedAt: yup.date().default(() => new Date().toLocaleString()),
 });
 
 export default userValidationSchema;
