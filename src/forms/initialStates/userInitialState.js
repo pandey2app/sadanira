@@ -9,10 +9,10 @@ export const userInitialState = {
     state: '',
     district: '',
     role: 'member',
-    userCategory: 'user', 
-    art: 'reader',
-    objective: '',
+    userCategory: 'reader', 
+    art: '',
+    objective: 'joined to empower the society!',
     isActive: true, 
     createdAt: new Date(),
-    updatedAt: null 
+    updatedAt: 'not updated yet' 
 };

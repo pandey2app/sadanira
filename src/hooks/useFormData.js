@@ -12,8 +12,10 @@ export const useFormData = (initialState, ref) => {
             ref.current.classList.remove('visually-hidden')
             setArts([...indianArtFormsByCategory[e.target.value]])
         }else{
-            ref.current.classList.add('visually-hidden')
-            setArts([])
+            if(e.target.name === 'userCategory' && e.target.value === 'reader'){
+                ref.current.classList.add('visually-hidden')
+                setArts([])
+            }
         }
 
         setFormData((prevValue) => ({

@@ -14,11 +14,13 @@ const userValidationSchema = yup.object({
         .required('Email must be provided')
         .matches(
             /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.(com|org|net)$/,
-            'Email must be a valid address and should belong to .com, .org, or .net domains'
+            'Email must be a valid address'
         )
         .email('Please use a valid email address'),
     mobile: yup
-        .mobile('Please use a valid mobile number'),
+        .string()
+        .required('Mobile number is required')
+        .matches(/^[6-9]\d{9}$/, 'Please use a valid mobile number'),
     password: yup
         .string()
         .required('Password must be provided')
@@ -33,27 +35,34 @@ const userValidationSchema = yup.object({
         .typeError('Please enter a valid date'),
     gender: yup
         .string()
-        .oneOf(['male', 'female'], 'gender must be either male or female, else other')
-        .required('Gender must be provided'),
+        .required('Gender must be provided')
+        .oneOf(['male', 'female'], 'gender must be either male, female or other'),
     state: yup
         .string()
         .required('State must be provided'),
     district: yup
         .string()
-        .required('City must be provided'),
+        .required('District must be provided'),
     role: yup
         .string()
         .oneOf(['member', 'admin'], 'Role must be either member or admin')
         .default('member'),
     userCategory: yup
         .string()
-        .oneOf(['user', 'writer', 'poet', 'actor', 'singer'], 'The category should be only user, writer, poet, actor, singer')
-        .default('user'),
-    art: yup.string().default('reader'),
-    objective: yup.string().default('joined to empower society'),
+        .default('reader')
+        .oneOf(['reader', 'writer', 'poet', 'actor','singer'], 'The category should be only reader, writer, poet, actor, singer'),
+    art: yup
+        .lazy((value, context) => {
+            console.log(context.parent.userCategory)                
+            if (context.parent.userCategory !== 'reader' && context.parent.userCategory) {
+                return yup.string().required('Art must be provided when user category is not reader');
+            }else
+            return yup.string().default('reader');
+        }),
+    objective: yup.string().default('joined to empower society!'),
     isActive: yup.boolean().default(true),
     createdAt: yup.date().default(() => new Date().toLocaleString()),
-    updatedAt: yup.date()
+    updatedAt: yup.string().default('Not updated yet!'),
 });
 
 export default userValidationSchema;
