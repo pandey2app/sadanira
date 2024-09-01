@@ -32,7 +32,6 @@ const ContactUsMessages = () => {
                         {
                             forms.length > 0 ? forms.map((form, index)=>(
                                 <tr key={index}>
-                                    {console.log(form)}
                                     <th scope="row">{index+1}</th>
                                     <td>{form.name}</td>
                                     <td>{form.mobile}</td>
