@@ -6,12 +6,11 @@ export const contactUsValidation = yup.object({
         .required("Name is required"),
     email: yup
         .string()
+        .required("Email is required")
         .matches(
             /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.(com|org|net)$/,
             'Email must be a valid address'
-        )
-        .email("Invalid email")
-        .required("Email is required"),
+        ),
     mobile: yup
         .string()
         .required("Mobile is required")

@@ -2,11 +2,14 @@ import React, { useState } from 'react';
 import { useFormData } from '../hooks/useFormData';
 import { contactUsInitial } from '../forms/initialStates/contactUsInitial';
 import { contactUsValidation } from '../forms/validationSchema/contactUsValidation';
+import { useDispatch } from 'react-redux';
+import { addContactUs, addContactUsStart } from '../redux/actions/contactUs.action';
 
 const Contact = () => {
-    const [formData, , inputChange] = useFormData(contactUsInitial)
+    const [formData, setFormData , inputChange] = useFormData(contactUsInitial)
     const [errors, setErrors] = useState({})
     const [successMessage, setSuccessMessage] = useState('')
+    const dispatch = useDispatch()
 
 
     
@@ -17,19 +20,24 @@ const Contact = () => {
         e.preventDefault();
         try {
             await contactUsValidation.validate(formData,{abortEarly:false})
-            console.log(formData);
+
+            dispatch(addContactUsStart(formData));
+            
+            setErrors({})
             setSuccessMessage('Your message has been sent successfully!')
+            setFormData(contactUsInitial)
         } catch (error) {
             const newErrors = {};
-            error.inner.forEach((error) => {
-                if(!newErrors[error.path]){
-                    newErrors[error.path] = error.message;
-                }
-            });
+            if(error.inner) {
+                error.inner.forEach((error) => {
+                    if(!newErrors[error.path]){
+                        newErrors[error.path] = error.message;
+                    }
+                });
+            }
             setSuccessMessage('')
             setErrors(newErrors);
         }  
-        console.log(errors);
     };
 
     return (
@@ -68,7 +76,7 @@ const Contact = () => {
                                 </div>
                                 <div className="col-12 text-center">
                                     <button type="submit" className="btn btn-primary px-5 py-3 rounded-pill">Send Message</button>
-                                    {successMessage && <div className="text-success">{successMessage}</div>}
+                                    {successMessage && <div className="text-success mt-2 mb-0">{successMessage}</div>}
                                 </div>
                             </form>
                         </div>

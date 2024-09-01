@@ -3,6 +3,7 @@ import category from "./category.saga";
 import product from "./product.saga";
 import user from "./user.saga";
 import creator from "./creator.saga";
+import contactUs from "./contactUs.saga";
 
 export default function* root(){
     yield all([
@@ -10,5 +11,6 @@ export default function* root(){
         fork(product),
         fork(user),
         fork(creator),
+        fork(contactUs)
     ])
 }
