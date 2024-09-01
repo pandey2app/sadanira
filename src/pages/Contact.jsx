@@ -3,7 +3,7 @@ import { useFormData } from '../hooks/useFormData';
 import { contactUsInitial } from '../forms/initialStates/contactUsInitial';
 import { contactUsValidation } from '../forms/validationSchema/contactUsValidation';
 import { useDispatch } from 'react-redux';
-import { addContactUs, addContactUsStart } from '../redux/actions/contactUs.action';
+import { addContactUsStart } from '../redux/actions/contactUs.action';
 
 const Contact = () => {
     const [formData, setFormData , inputChange] = useFormData(contactUsInitial)

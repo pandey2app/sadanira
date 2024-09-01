@@ -28,14 +28,15 @@ const JoinUs = () => {
 
     const handleMobile = useCallback(async () => {
         if (formData.mobile.length === 10) {
-            const response = await axios.get(`http://localhost:5000/api/users?mobile=${formData.mobile}`)
+            console.log(process.env.REACT_APP_ROOT_ADDRESS)            
+            const response = await axios.get(`${process.env.REACT_APP_ROOT_ADDRESS}/users?mobile=${formData.mobile}`)
             setResError(prev => ({ ...prev, mobileUnique: response.data.users.length ? false : true }));
         }
     }, [formData.mobile])
 
     const handleEmail = useCallback(async () => {
         if (formData.email.length > 5 && formData.email.indexOf('@') > -1 && formData.email.indexOf('.') > -1) {
-            const response = await axios.get(`http://localhost:5000/api/users?email=${formData.email}`)
+            const response = await axios.get(`${process.env.REACT_APP_ROOT_ADDRESS}/users?email=${formData.email}`)
             setResError((prev) => ({ ...prev, emailUnique: response.data.users.length ? false : true }));
         }
     }, [formData.email])
