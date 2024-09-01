@@ -3,7 +3,7 @@ import { ADD_USER_ERROR, ADD_USER_START, ADD_USER_SUCCESS, DELETE_USER_ERROR, DE
 // add user
 export const addUserStart = (user)=>({
     type : ADD_USER_START,
-    payload : {...user, createdAt: user.createdAt.toLocaleString()}
+    payload : {...user}
 })
 
 export const addUserSuccess = (user)=>({

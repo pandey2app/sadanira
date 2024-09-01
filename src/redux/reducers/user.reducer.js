@@ -1,11 +1,18 @@
-import { GET_USER_SUCCESS, LOGIN_USER_SUCCESS, LOGOUT_USER_SUCCESS } from "../constants/user.constant";
+import { ADD_USER_SUCCESS, GET_USER_SUCCESS, LOGIN_USER_SUCCESS, LOGOUT_USER_SUCCESS } from "../constants/user.constant";
 
 const initialState = {
-    users : localStorage.getItem("users") ? JSON.parse(localStorage.getItem("users")):[],
-    currentUser : localStorage.getItem("currentUser") ? JSON.parse(localStorage.getItem("currentUser")):{},
+    users : sessionStorage.getItem("users") ? JSON.parse(sessionStorage.getItem("users")):[],
+    currentUser : sessionStorage.getItem("currentUser") ? JSON.parse(sessionStorage.getItem("currentUser")):{},
+    addUserError: null,
 }
 export const userReducer = (state = initialState, action )=>{
     switch (action.type) {
+        case ADD_USER_SUCCESS:
+        return {
+            ...state,
+            currentUser: action.payload,
+            addUserError: null,
+        };
         case GET_USER_SUCCESS: 
         sessionStorage.setItem("users",JSON.stringify(action.payload))
         return{

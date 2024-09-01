@@ -15,9 +15,10 @@ function* getUser(){
 function* addUser({payload}){
     try {
         yield addUserToAPI(payload)
+        
         yield put(getUserStart())
     } catch (error) {
-        yield put(addUserError(error.message))
+        yield put(addUserError(error))
     }
 }
 

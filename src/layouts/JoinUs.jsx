@@ -6,13 +6,18 @@ import { addUserStart } from '../redux/actions/user.action'
 import { indianStatesAndUTs } from '../forms/data/states'
 import { indianDistricts } from '../forms/data/districts'
 import userValidationSchema from '../forms/validationSchema/userValidationSchema'
+import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
 
 const JoinUs = () => {
     const dispatch = useDispatch()
     const artInput = useRef()
-    const [formData, , inputChange, arts] = useFormData(userInitialState, artInput)
+    const [formData, setFormData, inputChange, arts] = useFormData(userInitialState, artInput)
     const [districts, setDistricts] = useState([])
     const [errors, setErrors] = useState({})
+    const [resError, setResError] = useState({})
+    const [successMessage, setSuccessMessage] = useState('')
+    const navigate = useNavigate()
 
     const districtHandler = useCallback(() => {
         if (formData.state) {
@@ -21,22 +26,47 @@ const JoinUs = () => {
         }
     }, [formData.state])
 
+    const handleMobile = useCallback(async () => {
+        if (formData.mobile.length === 10) {
+            const response = await axios.get(`http://localhost:5000/api/users?mobile=${formData.mobile}`)
+            setResError(prev => ({ ...prev, mobileUnique: response.data.users.length ? false : true }));
+        }
+    }, [formData.mobile])
+
+    const handleEmail = useCallback(async () => {
+        if (formData.email.length > 5 && formData.email.indexOf('@') > -1 && formData.email.indexOf('.') > -1) {
+            const response = await axios.get(`http://localhost:5000/api/users?email=${formData.email}`)
+            setResError((prev) => ({ ...prev, emailUnique: response.data.users.length ? false : true }));
+        }
+    }, [formData.email])
 
     const handleSubmit = async (e) => {
         e.preventDefault()
         try {
             await userValidationSchema.validate(formData, { abortEarly: false })
-            dispatch(addUserStart(formData))
+            if (resError.mobileUnique && resError.emailUnique) {
+                dispatch(addUserStart(formData))
+                setSuccessMessage(`Thank you ${formData.name} ji for joining The Team Sadaneera`)
+                setErrors({})
+                setFormData(userInitialState)
 
-            //redirect or other code when successful submission
+                setTimeout(()=>{
+                    navigate('/members')
+                },1000)
+            }else{
+                throw new Error('Mobile or Email already registered')
+            }
         } catch (error) {
             const newErrors = {}
-            console.dir(error.inner);            
-            error.inner.forEach(err => {
-                if(!newErrors[err.path]){
-                    newErrors[err.path] = err.message
-                }
-            });
+            if(error.inner){
+                error.inner.forEach(err => {
+                    if (!newErrors[err.path]) {
+                        newErrors[err.path] = err.message
+                    }
+                });
+            }else if(error.message === 'Mobile or Email already registered'){
+                newErrors.notUnique = error.message
+            }
             setErrors(newErrors)
             console.log(errors)
         }
@@ -44,7 +74,16 @@ const JoinUs = () => {
 
     useEffect(() => {
         districtHandler()
-    }, [formData.state, districtHandler])
+    }, [formData.state, districtHandler]);
+
+    useEffect(() => {
+        handleMobile()
+    }, [formData.mobile, handleMobile])
+
+    useEffect(() => {
+        handleEmail()
+    }, [formData.email, handleEmail])
+
 
     return (
         <div className="container-fluid contact py-3 wow bounceInUp" data-wow-delay="0.1s">
@@ -141,7 +180,9 @@ const JoinUs = () => {
                                     <textarea type="text" className="form-control border-primary p-2" name='objective' placeholder="Enter Your Objective" value={formData.objective} onChange={inputChange}></textarea>
                                 </div>
                                 <div className="col-12 text-center">
-                                    <button type="submit" className="btn btn-primary px-5 py-3 rounded-pill">Submit Form</button>
+                                    {errors.notUnique && <p className='text-danger mt-0 mb-2'>*{errors.notUnique}</p>}
+                                    <button type="submit" className={`btn btn-primary px-5 py-3 rounded-pill ${successMessage ? 'visually-hidden' : ''}`}>Submit Form</button>
+                                    {successMessage && <div className='text-success mt-2 fs-5 mb-0 text-capitalize'>{successMessage}</div>}
                                 </div>
                             </form>
                         </div>

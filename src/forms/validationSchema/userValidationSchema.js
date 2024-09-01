@@ -53,7 +53,6 @@ const userValidationSchema = yup.object({
         .oneOf(['reader', 'writer', 'poet', 'actor','singer'], 'The category should be only reader, writer, poet, actor, singer'),
     art: yup
         .lazy((value, context) => {
-            console.log(context.parent.userCategory)                
             if (context.parent.userCategory !== 'reader' && context.parent.userCategory) {
                 return yup.string().required('Art must be provided when user category is not reader');
             }else
