@@ -42,7 +42,7 @@ const FactSection = () => {
                 </div>
             </div>
             {/* <!-- Modal Video-- > */}
-            <div className="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div className="modal fade" id="videoModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div className="modal-dialog">
                     <div className="modal-content rounded-0">
                         <div className="modal-header">
@@ -52,7 +52,7 @@ const FactSection = () => {
                         <div className="modal-body">
                             {/* <!-- 16:9 aspect ratio --> */}
                             <div className="ratio ratio-16x9">
-                                <iframe width="560" className="embed-responsive-item" height="315" src="https://www.youtube.com/embed/qnkD7XXsJdU?si=UzW_IQTyYw0VCxaA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" id="video" allowfullscreen allowscriptaccess="always" ></iframe>
+                                <iframe width="560" className="embed-responsive-item" height="315" src="https://www.youtube.com/embed/qnkD7XXsJdU?si=UzW_IQTyYw0VCxaA" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" id="video" allowFullScreen allowscriptaccess="always" ></iframe>
                             </div>
                         </div>
                     </div>

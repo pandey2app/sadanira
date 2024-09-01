@@ -9,7 +9,7 @@ import { indianDistricts } from '../forms/data/districts'
 const JoinUs = () => {
     const dispatch = useDispatch()
     const artInput = useRef()
-    const [formData, , inputChange] = useFormData(userInitialState)
+    const [formData, , inputChange,arts] = useFormData(userInitialState, artInput)
     const [districts, setDistricts] = useState([])
 
     const districtHandler = useCallback(()=>{
@@ -19,6 +19,7 @@ const JoinUs = () => {
         }
     },[formData.state])
 
+    
     const handleSubmit = (e) => {
         e.preventDefault()
         console.log(formData)
@@ -101,18 +102,18 @@ const JoinUs = () => {
                                         <option value='singer'>Singer</option>
                                     </select>
                                 </div>
-                                <div className="col-lg-4 col-md-6">
-                                    <select ref={artInput} className="form-select border-primary p-2 visually-hidden" name='art' aria-label="Default select example" value={formData.art} onChange={inputChange}>
-                                        <option defaultValue>Select Art</option>
-                                        <option value='1'>Education</option>
-                                        <option value="2">Engineering</option>
-                                        <option value="3">Administration</option>
-                                        <option value="3">Student</option>
+                                <div ref={artInput} className="col-lg-4 col-md-6 visually-hidden">
+                                    <select className="form-select border-primary p-2 " name='art' aria-label="Default select example" value={formData.art} onChange={inputChange}>
+                                        {
+                                             arts.length && arts.map((art, index) => (
+                                                 <option key={index} value={art.value}>{art.name}</option>
+                                             ))
+                                        }
                                     </select>
                                 </div>
 
                                 <div className="col-lg-12 col-md-6">
-                                    <textarea type="text" className="form-control border-primary p-2" name='objective' placeholder="Enter Your Objective" value={formData.art} onChange={inputChange}></textarea>
+                                    <textarea type="text" className="form-control border-primary p-2" name='objective' placeholder="Enter Your Objective" value={formData.objective} onChange={inputChange}></textarea>
                                 </div>
                                 <div className="col-12 text-center">
                                     <button type="submit" className="btn btn-primary px-5 py-3 rounded-pill">Submit Form</button>
