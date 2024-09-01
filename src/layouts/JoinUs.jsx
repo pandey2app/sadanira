@@ -157,9 +157,9 @@ const JoinUs = () => {
                                     </select>
                                     {errors.district && <p className='text-danger mt-1 mb-0'>*{errors.district}</p>}
                                 </div>
-                                <div className="col-lg-4 col-md-6">
+                                <div className="col-lg-4 col-md-2">
                                     <select className="form-select border-primary p-2" name='userCategory' aria-label="Default select example" value={formData.userCategory} onChange={inputChange}>
-                                        <option defaultValue value='reader'>Select Category (reader by default)</option>
+                                        <option defaultValue value='reader'>Select Category</option>
                                         <option value='poet'>Poet</option>
                                         <option value='writer'>Writer</option>
                                         <option value='actor'>Actor</option>
@@ -167,7 +167,7 @@ const JoinUs = () => {
                                     </select>
                                     {errors.userCategory && <p className='text-danger mt-1 mb-0'>*{errors.userCategory}</p>}
                                 </div>
-                                <div ref={artInput} className="col-lg-4 col-md-6 visually-hidden">
+                                <div ref={artInput} className="col-lg-12 col-md-6 visually-hidden">
                                     <select className="form-select border-primary p-2 " name='art' aria-label="Default select example" value={formData.art} onChange={inputChange}>
                                         {
                                             arts.length && arts.map((art, index) => (

@@ -15,13 +15,14 @@ import Kabaddi from '../pages/Kabaddi';
 import ReadingMarathon from '../pages/ReadingMarathon';
 import Creaters from '../pages/Creaters';
 import Categories from '../pages/Categories';
+import ContactUsMessages from '../pages/admin/ContactUsMessages';
+import Auth from '../pages/admin/Auth';
 
 const Router = () => {
   return (
 
     // front routes
     <Routes>
-      
       <Route path="/" element={<Home />} />
       <Route path="/about-us" element={<About />} />
       <Route path="/gallery" element={<Gallery />} />
@@ -40,6 +41,10 @@ const Router = () => {
       <Route path='creaters/:type?' element={<Creaters />}/>
 
       <Route path='category/:type?' element={<Categories />}/>
+
+      <Route path="admin" element={<Auth />}>
+          <Route path="contact-us-messages" element={<ContactUsMessages />}/>
+      </Route>
 
       <Route path="*" element={<NotFound />} />
     </Routes>

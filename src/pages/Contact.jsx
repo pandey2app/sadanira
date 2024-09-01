@@ -4,12 +4,14 @@ import { contactUsInitial } from '../forms/initialStates/contactUsInitial';
 import { contactUsValidation } from '../forms/validationSchema/contactUsValidation';
 import { useDispatch } from 'react-redux';
 import { addContactUsStart } from '../redux/actions/contactUs.action';
+import { useNavigate } from 'react-router-dom';
 
 const Contact = () => {
     const [formData, setFormData , inputChange] = useFormData(contactUsInitial)
     const [errors, setErrors] = useState({})
     const [successMessage, setSuccessMessage] = useState('')
     const dispatch = useDispatch()
+    const navigate = useNavigate()
 
 
     
@@ -22,10 +24,12 @@ const Contact = () => {
             await contactUsValidation.validate(formData,{abortEarly:false})
 
             dispatch(addContactUsStart(formData));
-            
             setErrors({})
             setSuccessMessage('Your message has been sent successfully!')
             setFormData(contactUsInitial)
+            setTimeout(()=>{
+                navigate('/')
+            },500)
         } catch (error) {
             const newErrors = {};
             if(error.inner) {
