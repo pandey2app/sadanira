@@ -1,4 +1,9 @@
 export const indianDistricts = {
+    AN: [
+        { name: "Nicobar", value: "nicobar", code: "NIC" },
+        { name: "N&M Andaman", value: "north and middle andaman", code: "NMA" },
+        { name: "South Andaman", value: "south andaman", code: "SAD" }
+    ],
     AP: [
         { name: "Anantapur", value: "anantapur", code: "ATP" },
         { name: "Chittoor", value: "chittoor", code: "CTR" },
@@ -117,6 +122,44 @@ export const indianDistricts = {
         { name: "Vaishali", value: "vaishali", code: "VSL" },
         { name: "West Champaran", value: "west champaran", code: "WCH" }
     ],
+    CG: [
+        { name: "Balod", value: "balod", code: "BLD" },
+        { name: "Baloda Bazar", value: "baloda bazar", code: "BLBZ" },
+        { name: "Balrampur", value: "balrampur", code: "BLR" },
+        { name: "Bastar", value: "bastar", code: "BST" },
+        { name: "Bemetara", value: "bemetara", code: "BMT" },
+        { name: "Bijapur", value: "bijapur", code: "BJP" },
+        { name: "Bilaspur", value: "bilaspur", code: "BSP" },
+        { name: "Dantewada (South Bastar)", value: "dantewada", code: "DNT" },
+        { name: "Dhamtari", value: "dhamtari", code: "DMT" },
+        { name: "Durg", value: "durg", code: "DRG" },
+        { name: "Gariaband", value: "gariaband", code: "GRB" },
+        { name: "Gaurela-Pendra-Marwahi", value: "gaurela pendra marwahi", code: "GPM" },
+        { name: "Janjgir-Champa", value: "janjgir champa", code: "JNC" },
+        { name: "Jashpur", value: "jashpur", code: "JSP" },
+        { name: "Kabirdham (Kawardha)", value: "kabirdham kawardha", code: "KWD" },
+        { name: "Kanker (North Bastar)", value: "kanker", code: "KNK" },
+        { name: "Kondagaon", value: "kondagaon", code: "KDG" },
+        { name: "Korba", value: "korba", code: "KRB" },
+        { name: "Koriya (Korea)", value: "koriya korea", code: "KRY" },
+        { name: "Mahasamund", value: "mahasamund", code: "MSM" },
+        { name: "Mungeli", value: "mungeli", code: "MNG" },
+        { name: "Narayanpur", value: "narayanpur", code: "NRP" },
+        { name: "Raigarh", value: "raigarh", code: "RGR" },
+        { name: "Raipur", value: "raipur", code: "RPR" },
+        { name: "Rajnandgaon", value: "rajnandgaon", code: "RJN" },
+        { name: "Sukma", value: "sukma", code: "SKM" },
+        { name: "Surajpur", value: "surajpur", code: "SRJ" },
+        { name: "Surguja", value: "surguja", code: "SGJ" },
+        { name: "Balauda", value: "balauda", code: "BLA" },
+        { name: "Khairagarh-Chhuikhadan-Gandai", value: "khairagarh chhuikhadan gandai", code: "KCG" },
+        { name: "Sakti", value: "sakti", code: "SKT" },
+        { name: "Sarangarh-Bilaigarh", value: "sarangarh bilaigarh", code: "SGB" },
+        { name: "Manendragarh-Chirmiri-Bharatpur", value: "manendragarh chirmiri bharatpur", code: "MCB" }
+    ],
+    CH: [
+        { name: "Chandigarh", value: "chandigarh", code: "CHD" }
+    ],
     CT: [
         { name: "Balod", value: "balod", code: "BLD" },
         { name: "Baloda Bazar", value: "baloda bazar", code: "BLB" },
@@ -144,6 +187,24 @@ export const indianDistricts = {
         { name: "Sukma", value: "sukma", code: "SKM" },
         { name: "Surajpur", value: "surajpur", code: "SRJ" },
         { name: "Surguja", value: "surguja", code: "SGJ" }
+    ],
+    DN: [
+        { name: "Dadra and Nagar Haveli", value: "dadra and nagar haveli", code: "DNH" },
+        { name: "Daman", value: "daman", code: "DMN" },
+        { name: "Diu", value: "diu", code: "DIU" }
+    ],
+    DL: [
+        { name: "Central Delhi", value: "central delhi", code: "CDL" },
+        { name: "East Delhi", value: "east delhi", code: "EDL" },
+        { name: "New Delhi", value: "new delhi", code: "NDL" },
+        { name: "North Delhi", value: "north delhi", code: "NDL" },
+        { name: "North East Delhi", value: "north east delhi", code: "NED" },
+        { name: "North West Delhi", value: "north west delhi", code: "NWD" },
+        { name: "South Delhi", value: "south delhi", code: "SDL" },
+        { name: "South East Delhi", value: "south east delhi", code: "SED" },
+        { name: "South West Delhi", value: "south west delhi", code: "SWD" },
+        { name: "West Delhi", value: "west delhi", code: "WDL" },
+        { name: "Shahdara", value: "shahdara", code: "SHA" }
     ],
     GA: [
         { name: "North Goa", value: "north goa", code: "NGP" },
@@ -237,6 +298,29 @@ export const indianDistricts = {
         { name: "Simdega", value: "simdega", code: "SIM" },
         { name: "West Singhbhum", value: "west singhbhum", code: "WSB" }
     ],
+    JK: [
+        { name: "Anantnag", value: "anantnag", code: "ANT" },
+        { name: "Bandipora", value: "bandipora", code: "BDP" },
+        { name: "Baramulla", value: "baramulla", code: "BRM" },
+        { name: "Budgam", value: "budgam", code: "BDG" },
+        { name: "Doda", value: "doda", code: "DOD" },
+        { name: "Jammu", value: "jammu", code: "JAM" },
+        { name: "Kathua", value: "kathua", code: "KAT" },
+        { name: "Kishtwar", value: "kishtwar", code: "KIS" },
+        { name: "Kulgam", value: "kulgam", code: "KUL" },
+        { name: "Pulwama", value: "pulwama", code: "PLW" },
+        { name: "Ramban", value: "ramban", code: "RAM" },
+        { name: "Reasi", value: "reasi", code: "RES" },
+        { name: "Samba", value: "samba", code: "SAMB" },
+        { name: "Shopian", value: "shopian", code: "SHP" },
+        { name: "Srinagar", value: "srinagar", code: "SRI" },
+        { name: "Udhampur", value: "udhampur", code: "UDH" },
+        { name: "Jammu (Rural)", value: "jammu rural", code: "JMR" },
+        { name: "Jammu (Urban)", value: "jammu urban", code: "JMU" },
+        { name: "Rajouri", value: "rajouri", code: "RAJ" },
+        { name: "Poonch", value: "poonch", code: "POO" },
+        { name: "Ganderbal", value: "ganderbal", code: "GAN" }
+    ],
     KA: [
         { name: "Bagalkot", value: "bagalkot", code: "BGT" },
         { name: "Ballari", value: "ballari", code: "BLL" },
@@ -280,6 +364,20 @@ export const indianDistricts = {
         { name: "Pathanamthitta", value: "pathanamthitta", code: "PTA" },
         { name: "Thrissur", value: "thrissur", code: "THR" },
         { name: "Wayanad", value: "wayanad", code: "WAY" }
+    ],
+    LA: [
+        { name: "Leh", value: "leh", code: "LEH" },
+        { name: "Kargil", value: "kargil", code: "KRG" }
+    ],
+    LD: [
+        { name: "Agatti", value: "agatti", code: "AGT" },
+        { name: "Androth", value: "androth", code: "AND" },
+        { name: "Amini", value: "amini", code: "AMN" },
+        { name: "Kavaratti", value: "kavaratti", code: "KAV" },
+        { name: "Kalapeni", value: "kalapeni", code: "KAL" },
+        { name: "Kadmat", value: "kadmat", code: "KDM" },
+        { name: "Suheli", value: "suheli", code: "SUH" },
+        { name: "Minicoy", value: "minicoy", code: "MIN" }
     ],
     MP: [
         { name: "Agar Malwa", value: "agar malwa", code: "AGM" },
@@ -444,6 +542,12 @@ export const indianDistricts = {
         { name: "Sri Muktsar Sahib", value: "sri muktsar sahib", code: "SMK" },
         { name: "Tarn Taran", value: "tarn taran", code: "TAR" }
     ],
+    PY: [
+        { name: "Puducherry", value: "puducherry", code: "PDC" },
+        { name: "Karaikal", value: "karaikal", code: "KRK" },
+        { name: "Mahe", value: "mahe", code: "MHE" },
+        { name: "Yanam", value: "yanam", code: "YNM" }
+    ],
     RJ: [
         { name: "Ajmer", value: "ajmer", code: "AJM" },
         { name: "Alwar", value: "alwar", code: "ALW" },
@@ -482,6 +586,41 @@ export const indianDistricts = {
         { name: "South Sikkim", value: "south sikkim", code: "SSI" },
         { name: "West Sikkim", value: "west sikkim", code: "WSI" }
     ],
+    TG: [
+        { name: "Adilabad", value: "adilabad", code: "ADB" },
+        { name: "Bhadradri Kothagudem", value: "bhadradri kothagudem", code: "BHD" },
+        { name: "Hyderabad", value: "hyderabad", code: "HYD" },
+        { name: "Jagtial", value: "jagtial", code: "JGL" },
+        { name: "Jangaon", value: "jangaon", code: "JGN" },
+        { name: "Jayashankar Bhupalpally", value: "jayashankar bhupalpally", code: "JBP" },
+        { name: "Jogulamba Gadwal", value: "jogulamba gadwal", code: "JGL" },
+        { name: "Kamareddy", value: "kamareddy", code: "KMR" },
+        { name: "Karimnagar", value: "karimnagar", code: "KRM" },
+        { name: "Khammam", value: "khammam", code: "KHM" },
+        { name: "Kumuram Bheem Asifabad", value: "kumuram bheem asifabad", code: "KBA" },
+        { name: "Mahabubabad", value: "mahabubabad", code: "MBD" },
+        { name: "Mahabubnagar", value: "mahabubnagar", code: "MBN" },
+        { name: "Mancherial", value: "mancherial", code: "MCR" },
+        { name: "Medak", value: "medak", code: "MDK" },
+        { name: "Medchal–Malkajgiri", value: "medchal malkajgiri", code: "MDM" },
+        { name: "Mulugu", value: "mulugu", code: "MLG" },
+        { name: "Nagarkurnool", value: "nagarkurnool", code: "NKL" },
+        { name: "Nalgonda", value: "nalgonda", code: "NLG" },
+        { name: "Narayanpet", value: "narayanpet", code: "NRP" },
+        { name: "Nirmal", value: "nirmal", code: "NRM" },
+        { name: "Nizamabad", value: "nizamabad", code: "NZB" },
+        { name: "Peddapalli", value: "peddapalli", code: "PDP" },
+        { name: "Rajanna Sircilla", value: "rajanna sircilla", code: "RSL" },
+        { name: "Ranga Reddy", value: "ranga reddy", code: "RRD" },
+        { name: "Sangareddy", value: "sangareddy", code: "SGD" },
+        { name: "Siddipet", value: "siddipet", code: "SDP" },
+        { name: "Suryapet", value: "suryapet", code: "SYP" },
+        { name: "Vikarabad", value: "vikarabad", code: "VKD" },
+        { name: "Wanaparthy", value: "wanaparthy", code: "WNP" },
+        { name: "Warangal Rural", value: "warangal rural", code: "WRR" },
+        { name: "Warangal Urban", value: "warangal urban", code: "WRU" },
+        { name: "Yadadri Bhuvanagiri", value: "yadadri bhuvanagiri", code: "YBG" }
+    ],
     TN: [
         { name: "Ariyalur", value: "ariyalur", code: "ARI" },
         { name: "Chengalpattu", value: "chengalpattu", code: "CHE" },
@@ -518,6 +657,21 @@ export const indianDistricts = {
         { name: "South Tripura", value: "south tripura", code: "SOU" },
         { name: "Unakoti", value: "unakoti", code: "UNA" },
         { name: "West Tripura", value: "west tripura", code: "WES" }
+    ],
+    UK: [
+        { name: "Almora", value: "almora", code: "ALM" },
+        { name: "Bageshwar", value: "bageshwar", code: "BSR" },
+        { name: "Chamoli", value: "chamoli", code: "CML" },
+        { name: "Champawat", value: "champawat", code: "CMP" },
+        { name: "Dehradun", value: "dehradun", code: "DDN" },
+        { name: "Haridwar", value: "haridwar", code: "HRD" },
+        { name: "Nainital", value: "nainital", code: "NTL" },
+        { name: "Pauri Garhwal", value: "pauri garhwal", code: "PGR" },
+        { name: "Pithoragarh", value: "pithoragarh", code: "PTH" },
+        { name: "Rudraprayag", value: "rudraprayag", code: "RDP" },
+        { name: "Tehri Garhwal", value: "tehri garhwal", code: "TGR" },
+        { name: "Udham Singh Nagar", value: "udham singh nagar", code: "USN" },
+        { name: "Uttarkashi", value: "uttarkashi", code: "UTK" }
     ],
     UP: [
         { name: "Agra", value: "agra", code: "AGR" },

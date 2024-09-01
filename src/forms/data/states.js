@@ -29,7 +29,7 @@ export const indianStatesAndUTs = [
     { value: "west bengal", name: "West Bengal", code: "WB" },
     { value: "andaman and nicobar islands", name: "Andaman and Nicobar Islands", code: "AN" },
     { value: "chandigarh", name: "Chandigarh", code: "CH" },
-    { value: "dadra and nagar haveli and daman and diu", name: "Dadra and Nagar Haveli and Daman and Diu", code: "DN" },
+    { value: "dadra and nagar haveli and daman and diu ", name: "D & N haveli and D & D", code: "DN" },
     { value: "delhi", name: "Delhi", code: "DL" },
     { value: "lakshadweep", name: "Lakshadweep", code: "LD" },
     { value: "puducherry", name: "Puducherry", code: "PY" },
