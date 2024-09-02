@@ -43,73 +43,73 @@ const EventsSection = () => {
                                     <div className="row g-4">
                                         <div className="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.1s">
                                             <div className="event-img position-relative">
-                                                <img className="img-fluid rounded w-100" src="img/lok-sangeet1.jpg" alt="" />
+                                                <img className="img-fluid rounded w-100" src="/img/lok-sangeet1.jpg" alt="" />
                                                     <div className="event-overlay d-flex flex-column p-4">
                                                         <h4 className="me-auto">Lok Sangeet</h4>
-                                                        <a href="img/lok-sangeet1.jpg" data-lightbox="event-1" className="my-auto"><i className="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                        <a href="/img/lok-sangeet1.jpg" data-lightbox="event-1" className="my-auto"><i className="fas fa-search-plus text-dark fa-2x"></i></a>
                                                     </div>
                                             </div>
                                         </div>
                                         <div className="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.3s">
                                             <div className="event-img position-relative">
-                                                <img className="img-fluid rounded w-100" src="img/open-mic1.jpg" alt="" />
+                                                <img className="img-fluid rounded w-100" src="/img/open-mic1.jpg" alt="" />
                                                     <div className="event-overlay d-flex flex-column p-4">
                                                         <h4 className="me-auto">Open mic</h4>
-                                                        <a href="img/open-mic1.jpg" data-lightbox="event-2" className="my-auto"><i className="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                        <a href="/img/open-mic1.jpg" data-lightbox="event-2" className="my-auto"><i className="fas fa-search-plus text-dark fa-2x"></i></a>
                                                     </div>
                                             </div>
                                         </div>
                                         <div className="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.5s">
                                             <div className="event-img position-relative">
-                                                <img className="img-fluid rounded w-100" src="img/kavi-sammelan1.jpg" alt="" />
+                                                <img className="img-fluid rounded w-100" src="/img/kavi-sammelan1.jpg" alt="" />
                                                     <div className="event-overlay d-flex flex-column p-4">
                                                         <h4 className="me-auto">Kavi Sammelan</h4>
-                                                        <a href="img/kavi-sammelan1.jpg" data-lightbox="event-3" className="my-auto"><i className="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                        <a href="/img/kavi-sammelan1.jpg" data-lightbox="event-3" className="my-auto"><i className="fas fa-search-plus text-dark fa-2x"></i></a>
                                                     </div>
                                             </div>
                                         </div>
                                         <div className="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.7s">
                                             <div className="event-img position-relative">
-                                                <img className="img-fluid rounded w-100" src="img/open-mic2.jpg" alt="" />
+                                                <img className="img-fluid rounded w-100" src="/img/open-mic2.jpg" alt="" />
                                                     <div className="event-overlay d-flex flex-column p-4">
                                                         <h4 className="me-auto">Open Mic</h4>
-                                                        <a href="img/open-mic2.jpg" data-lightbox="event-4" className="my-auto"><i className="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                        <a href="/img/open-mic2.jpg" data-lightbox="event-4" className="my-auto"><i className="fas fa-search-plus text-dark fa-2x"></i></a>
                                                     </div>
                                             </div>
                                         </div>
                                         <div className="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.1s">
                                             <div className="event-img position-relative">
-                                                <img className="img-fluid rounded w-100" src="img/kavi-sammelan2.jpg" alt="" />
+                                                <img className="img-fluid rounded w-100" src="/img/kavi-sammelan2.jpg" alt="" />
                                                     <div className="event-overlay d-flex flex-column p-4">
                                                         <h4 className="me-auto">Kavi Sammelan</h4>
-                                                        <a href="img/kavi-sammelan2.jpg" data-lightbox="event-5" className="my-auto"><i className="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                        <a href="/img/kavi-sammelan2.jpg" data-lightbox="event-5" className="my-auto"><i className="fas fa-search-plus text-dark fa-2x"></i></a>
                                                     </div>
                                             </div>
                                         </div>
                                         <div className="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.3s">
                                             <div className="event-img position-relative">
-                                                <img className="img-fluid rounded w-100" src="img/kavi-sammelan3.jpg" alt="" />
+                                                <img className="img-fluid rounded w-100" src="/img/kavi-sammelan3.jpg" alt="" />
                                                     <div className="event-overlay d-flex flex-column p-4">
                                                         <h4 className="me-auto">Kavi Sammelan</h4>
-                                                        <a href="img/kavi-sammelan3.jpg" data-lightbox="event-6" className="my-auto"><i className="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                        <a href="/img/kavi-sammelan3.jpg" data-lightbox="event-6" className="my-auto"><i className="fas fa-search-plus text-dark fa-2x"></i></a>
                                                     </div>
                                             </div>
                                         </div>
                                         <div className="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.5s">
                                             <div className="event-img position-relative">
-                                                <img className="img-fluid rounded w-100" src="img/sahitya-charcha1.jpg" alt="" />
+                                                <img className="img-fluid rounded w-100" src="/img/sahitya-charcha1.jpg" alt="" />
                                                     <div className="event-overlay d-flex flex-column p-4">
                                                         <h4 className="me-auto">Sahitya Charcha</h4>
-                                                        <a href="img/sahitya-charcha1.jpg" data-lightbox="event-7" className="my-auto"><i className="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                        <a href="/img/sahitya-charcha1.jpg" data-lightbox="event-7" className="my-auto"><i className="fas fa-search-plus text-dark fa-2x"></i></a>
                                                     </div>
                                             </div>
                                         </div>
                                         <div className="col-md-6 col-lg-3 wow bounceInUp" data-wow-delay="0.7s">
                                             <div className="event-img position-relative">
-                                                <img className="img-fluid rounded w-100" src="img/book-launch1.jpg" alt="" />
+                                                <img className="img-fluid rounded w-100" src="/img/book-launch1.jpg" alt="" />
                                                     <div className="event-overlay d-flex flex-column p-4">
                                                         <h4 className="me-auto">Book Launch</h4>
-                                                        <a href="img/book-launch1.jpg" data-lightbox="event-17" className="my-auto"><i className="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                        <a href="/img/book-launch1.jpg" data-lightbox="event-17" className="my-auto"><i className="fas fa-search-plus text-dark fa-2x"></i></a>
                                                     </div>
                                             </div>
                                         </div>
@@ -123,19 +123,19 @@ const EventsSection = () => {
                                     <div className="row g-4">
                                         <div className="col-md-6 col-lg-3">
                                             <div className="event-img position-relative">
-                                                <img className="img-fluid rounded w-100" src="img/sahitya-charcha1.jpg" alt="" />
+                                                <img className="img-fluid rounded w-100" src="/img/sahitya-charcha1.jpg" alt="" />
                                                     <div className="event-overlay d-flex flex-column p-4">
                                                         <h4 className="me-auto">Sahitya Charcha</h4>
-                                                        <a href="img/sahitya-charcha1.jpg" data-lightbox="event-8" className="my-auto"><i className="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                        <a href="/img/sahitya-charcha1.jpg" data-lightbox="event-8" className="my-auto"><i className="fas fa-search-plus text-dark fa-2x"></i></a>
                                                     </div>
                                             </div>
                                         </div>
                                         <div className="col-md-6 col-lg-3">
                                             <div className="event-img position-relative">
-                                                <img className="img-fluid rounded w-100" src="img/sahitya-charcha2.jpg" alt="" />
+                                                <img className="img-fluid rounded w-100" src="/img/sahitya-charcha2.jpg" alt="" />
                                                     <div className="event-overlay d-flex flex-column p-4">
                                                         <h4 className="me-auto">Sahitya Charcha</h4>
-                                                        <a href="img/sahitya-charcha2.jpg" data-lightbox="event-9" className="my-auto"><i className="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                        <a href="/img/sahitya-charcha2.jpg" data-lightbox="event-9" className="my-auto"><i className="fas fa-search-plus text-dark fa-2x"></i></a>
                                                     </div>
                                             </div>
                                         </div>
@@ -149,19 +149,19 @@ const EventsSection = () => {
                                     <div className="row g-4">
                                         <div className="col-md-6 col-lg-3">
                                             <div className="event-img position-relative">
-                                                <img className="img-fluid rounded w-100" src="img/book-launch1.jpg" alt="" />
+                                                <img className="img-fluid rounded w-100" src="/img/book-launch1.jpg" alt="" />
                                                     <div className="event-overlay d-flex flex-column p-4">
                                                         <h4 className="me-auto">Book Launch</h4>
-                                                        <a href="img/book-launch1.jpg" data-lightbox="event-10" className="my-auto"><i className="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                        <a href="/img/book-launch1.jpg" data-lightbox="event-10" className="my-auto"><i className="fas fa-search-plus text-dark fa-2x"></i></a>
                                                     </div>
                                             </div>
                                         </div>
                                         <div className="col-md-6 col-lg-3">
                                             <div className="event-img position-relative">
-                                                <img className="img-fluid rounded w-100" src="img/book-launch2.jpg" alt="" />
+                                                <img className="img-fluid rounded w-100" src="/img/book-launch2.jpg" alt="" />
                                                     <div className="event-overlay d-flex flex-column p-4">
                                                         <h4 className="me-auto">Book Launch</h4>
-                                                        <a href="img/book-launch2.jpg" data-lightbox="event-11" className="my-auto"><i className="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                        <a href="/img/book-launch2.jpg" data-lightbox="event-11" className="my-auto"><i className="fas fa-search-plus text-dark fa-2x"></i></a>
                                                     </div>
                                             </div>
                                         </div>
@@ -175,19 +175,19 @@ const EventsSection = () => {
                                     <div className="row g-4">
                                         <div className="col-md-6 col-lg-3">
                                             <div className="event-img position-relative">
-                                                <img className="img-fluid rounded w-100" src="img/kavi-sammelan1.jpg" alt="" />
+                                                <img className="img-fluid rounded w-100" src="/img/kavi-sammelan1.jpg" alt="" />
                                                     <div className="event-overlay d-flex flex-column p-4">
                                                         <h4 className="me-auto">Kavi Sammelan</h4>
-                                                        <a href="img/kavi-sammelan1.jpg" data-lightbox="event-12" className="my-auto"><i className="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                        <a href="/img/kavi-sammelan1.jpg" data-lightbox="event-12" className="my-auto"><i className="fas fa-search-plus text-dark fa-2x"></i></a>
                                                     </div>
                                             </div>
                                         </div>
                                         <div className="col-md-6 col-lg-3">
                                             <div className="event-img position-relative">
-                                                <img className="img-fluid rounded w-100" src="img/kavi-sammelan2.jpg" alt="" />
+                                                <img className="img-fluid rounded w-100" src="/img/kavi-sammelan2.jpg" alt="" />
                                                     <div className="event-overlay d-flex flex-column p-4">
                                                         <h4 className="me-auto">Kavi Sammelan</h4>
-                                                        <a href="img/kavi-sammelan2.jpg" data-lightbox="event-13" className="my-auto"><i className="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                        <a href="/img/kavi-sammelan2.jpg" data-lightbox="event-13" className="my-auto"><i className="fas fa-search-plus text-dark fa-2x"></i></a>
                                                     </div>
                                             </div>
                                         </div>
@@ -201,19 +201,19 @@ const EventsSection = () => {
                                     <div className="row g-4">
                                         <div className="col-md-6 col-lg-3">
                                             <div className="event-img position-relative">
-                                                <img className="img-fluid rounded w-100" src="img/lok-sangeet1.jpg" alt="" />
+                                                <img className="img-fluid rounded w-100" src="/img/lok-sangeet1.jpg" alt="" />
                                                     <div className="event-overlay d-flex flex-column p-4">
                                                         <h4 className="me-auto">Lok Sangeet</h4>
-                                                        <a href="img/lok-sangeet1.jpg" data-lightbox="event-14" className="my-auto"><i className="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                        <a href="/img/lok-sangeet1.jpg" data-lightbox="event-14" className="my-auto"><i className="fas fa-search-plus text-dark fa-2x"></i></a>
                                                     </div>
                                             </div>
                                         </div>
                                         <div className="col-md-6 col-lg-3">
                                             <div className="event-img position-relative">
-                                                <img className="img-fluid rounded w-100" src="img/lok-sangeet2.jpg" alt="" />
+                                                <img className="img-fluid rounded w-100" src="/img/lok-sangeet2.jpg" alt="" />
                                                     <div className="event-overlay d-flex flex-column p-4">
                                                         <h4 className="me-auto">Lok Sangeet</h4>
-                                                        <a href="img/lok-sangeet2.jpg" data-lightbox="event-15" className="my-auto"><i className="fas fa-search-plus text-dark fa-2x"></i></a>
+                                                        <a href="/img/lok-sangeet2.jpg" data-lightbox="event-15" className="my-auto"><i className="fas fa-search-plus text-dark fa-2x"></i></a>
                                                     </div>
                                             </div>
                                         </div>

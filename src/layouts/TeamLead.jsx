@@ -11,7 +11,7 @@ const TeamLead = () => {
                 <div className="row g-4">
                     <div className="col-lg-3 col-md-6 wow bounceInUp" data-wow-delay="0.1s">
                         <div className="team-item rounded">
-                            <img className="img-fluid rounded-top " src="img/sarvesh-team-lead.jpg" alt="sarvesh tiwari shreemukh"/>
+                            <img className="img-fluid rounded-top " src="/img/sarvesh-team-lead.jpg" alt="sarvesh tiwari shreemukh"/>
                             <div className="team-content text-center py-3 bg-dark rounded-bottom">
                                 <h4 className="text-primary">Sarvesh Tiwari</h4>
                                 <p className="text-white mb-0">Member Sadanira</p>
@@ -26,7 +26,7 @@ const TeamLead = () => {
                     </div>
                     <div className="col-lg-3 col-md-6 wow bounceInUp" data-wow-delay="0.3s">
                         <div className="team-item rounded">
-                            <img className="img-fluid rounded-top " src="img/vivek-team-lead.jpg" alt="vivek kumar pathak"/>
+                            <img className="img-fluid rounded-top " src="/img/vivek-team-lead.jpg" alt="vivek kumar pathak"/>
                             <div className="team-content text-center py-3 bg-dark rounded-bottom">
                                 <h4 className="text-primary">Vivek Pathak</h4>
                                 <p className="text-white mb-0">Memeber Sadanira</p>
@@ -41,7 +41,7 @@ const TeamLead = () => {
                     </div>
                     <div className="col-lg-3 col-md-6 wow bounceInUp" data-wow-delay="0.5s">
                         <div className="team-item rounded">
-                            <img className="img-fluid rounded-top " src="img/rajan-team-lead.jpg" alt="rajan dwiwedi"/>
+                            <img className="img-fluid rounded-top " src="/img/rajan-team-lead.jpg" alt="rajan dwiwedi"/>
                             <div className="team-content text-center py-3 bg-dark rounded-bottom">
                                 <h4 className="text-primary">Rajan Dwivedi</h4>
                                 <p className="text-white mb-0">Member Sadanira</p>
@@ -56,7 +56,7 @@ const TeamLead = () => {
                     </div>
                     <div className="col-lg-3 col-md-6 wow bounceInUp" data-wow-delay="0.7s">
                         <div className="team-item rounded">
-                            <img className="img-fluid rounded-top " src="img/aditya-team-lead.jpg" alt="aditya prakash pandey"/>
+                            <img className="img-fluid rounded-top " src="/img/aditya-team-lead.jpg" alt="aditya prakash pandey"/>
                             <div className="team-content text-center py-3 bg-dark rounded-bottom">
                                 <h4 className="text-primary">Aditya Pandey</h4>
                                 <p className="text-white mb-0">Member Sadanira</p>

@@ -13,7 +13,7 @@ const BlogSection = () => {
                     <div className="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s">
                         <div className="blog-item">
                             <div className="overflow-hidden rounded">
-                                <img src="img/blog-1.jpg" className="img-fluid w-100" alt=""/>
+                                <img src="/img/blog-1.jpg" className="img-fluid w-100" alt=""/>
                             </div>
                             <div className="blog-content mx-4 d-flex rounded bg-light">
                                 <div className="text-dark bg-primary rounded-start">
@@ -29,7 +29,7 @@ const BlogSection = () => {
                     <div className="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.3s">
                         <div className="blog-item">
                             <div className="overflow-hidden rounded">
-                                <img src="img/blog-2.jpg" className="img-fluid w-100" alt=""/>
+                                <img src="/img/blog-2.jpg" className="img-fluid w-100" alt=""/>
                             </div>
                             <div className="blog-content mx-4 d-flex rounded bg-light">
                                 <div className="text-dark bg-primary rounded-start">
@@ -45,7 +45,7 @@ const BlogSection = () => {
                     <div className="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.5s">
                         <div className="blog-item">
                             <div className="overflow-hidden rounded">
-                                <img src="img/blog-3.jpg" className="img-fluid w-100" alt=""/>
+                                <img src="/img/blog-3.jpg" className="img-fluid w-100" alt=""/>
                             </div>
                             <div className="blog-content mx-4 d-flex rounded bg-light">
                                 <div className="text-dark bg-primary rounded-start">

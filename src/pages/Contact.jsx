@@ -49,7 +49,7 @@ const Contact = () => {
             <div className="container">
                 <div className="row g-0">
                     <div className="col-1">
-                        <img src="img/background-site.jpg" className="img-fluid h-100 w-100 rounded-start" style={{ objectFit: 'cover', opacity: '0.7' }} alt="" />
+                        <img src="/img/background-site.jpg" className="img-fluid h-100 w-100 rounded-start" style={{ objectFit: 'cover', opacity: '0.7' }} alt="" />
                     </div>
                     <div className="col-10">
                         <div className="border-bottom border-top border-primary bg-light py-5 px-4">
@@ -86,7 +86,7 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className="col-1">
-                        <img src="img/background-site.jpg" className="img-fluid h-100 w-100 rounded-start" style={{ objectFit: 'cover', transform: `rotate(180deg)`, opacity: "0.8" }} alt="" />
+                        <img src="/img/background-site.jpg" className="img-fluid h-100 w-100 rounded-start" style={{ objectFit: 'cover', transform: `rotate(180deg)`, opacity: "0.8" }} alt="" />
                     </div>
                 </div>
             </div>

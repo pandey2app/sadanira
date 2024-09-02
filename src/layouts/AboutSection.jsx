@@ -7,9 +7,9 @@ const AboutSection = () => {
             <div className="container">
                 <div className="row g-5 align-items-center">
                     <div className="col-lg-5 wow bounceInUp" data-wow-delay="0.1s">
-                        <img src="img/logo/sadanira-mahotsav-bgr.png" className="img-fluid rounded" alt="sadaneera mahotsav" />
+                        <img src="/img/logo/sadanira-mahotsav-bgr.png" className="img-fluid rounded" alt="sadaneera mahotsav" />
                         <br/>
-                        <img src="img/lit-fest-bgr.png" className="img-fluid rounded" alt="dehat ka pahla lit-fest" />
+                        <img src="/img/lit-fest-bgr.png" className="img-fluid rounded" alt="dehat ka pahla lit-fest" />
                     </div>
                     <div className="col-lg-7 wow bounceInUp" data-wow-delay="0.3s">
                         <small className="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Till Now</small>

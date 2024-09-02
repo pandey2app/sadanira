@@ -24,7 +24,7 @@ const Testimonial = () => {
                                 <div className="owl-carousel owl-theme testimonial-carousel testimonial-carousel-1 mb-4 wow bounceInUp" data-wow-delay="0.1s">
                                     <div className="testimonial-item rounded bg-light">
                                         <div className="d-flex mb-3">
-                                            <img src="img/testimonial-1.jpg" className="img-fluid rounded-circle flex-shrink-0" alt="" />
+                                            <img src="/img/testimonial-1.jpg" className="img-fluid rounded-circle flex-shrink-0" alt="" />
                                             <div className="position-absolute" style={{ top: "15px", right: "20px" }}>
                                                 <i className="fa fa-quote-right fa-2x"></i>
                                             </div>
@@ -46,7 +46,7 @@ const Testimonial = () => {
                                     </div>
                                     <div className="testimonial-item rounded bg-light">
                                         <div className="d-flex mb-3">
-                                            <img src="img/testimonial-2.jpg" className="img-fluid rounded-circle flex-shrink-0" alt="" />
+                                            <img src="/img/testimonial-2.jpg" className="img-fluid rounded-circle flex-shrink-0" alt="" />
                                             <div className="position-absolute" style={{ top: "15px", right: "20px" }}>
                                                 <i className="fa fa-quote-right fa-2x"></i>
                                             </div>
@@ -68,7 +68,7 @@ const Testimonial = () => {
                                     </div>
                                     <div className="testimonial-item rounded bg-light">
                                         <div className="d-flex mb-3">
-                                            <img src="img/testimonial-3.jpg" className="img-fluid rounded-circle flex-shrink-0" alt="" />
+                                            <img src="/img/testimonial-3.jpg" className="img-fluid rounded-circle flex-shrink-0" alt="" />
                                             <div className="position-absolute" style={{ top: "15px", right: "20px" }}>
                                                 <i className="fa fa-quote-right fa-2x"></i>
                                             </div>
@@ -90,7 +90,7 @@ const Testimonial = () => {
                                     </div>
                                     <div className="testimonial-item rounded bg-light">
                                         <div className="d-flex mb-3">
-                                            <img src="img/testimonial-4.jpg" className="img-fluid rounded-circle flex-shrink-0" alt="" />
+                                            <img src="/img/testimonial-4.jpg" className="img-fluid rounded-circle flex-shrink-0" alt="" />
                                             <div className="position-absolute" style={{ top: "15px", right: "20px" }}>
                                                 <i className="fa fa-quote-right fa-2x"></i>
                                             </div>
@@ -114,7 +114,7 @@ const Testimonial = () => {
                                 <div className="owl-carousel testimonial-carousel testimonial-carousel-2 wow bounceInUp" data-wow-delay="0.3s">
                                     <div className="testimonial-item rounded bg-light">
                                         <div className="d-flex mb-3">
-                                            <img src="img/testimonial-1.jpg" className="img-fluid rounded-circle flex-shrink-0" alt="" />
+                                            <img src="/img/testimonial-1.jpg" className="img-fluid rounded-circle flex-shrink-0" alt="" />
                                             <div className="position-absolute" style={{ top: "15px", right: "20px" }}>
                                                 <i className="fa fa-quote-right fa-2x"></i>
                                             </div>
@@ -136,7 +136,7 @@ const Testimonial = () => {
                                     </div>
                                     <div className="testimonial-item rounded bg-light">
                                         <div className="d-flex mb-3">
-                                            <img src="img/testimonial-2.jpg" className="img-fluid rounded-circle flex-shrink-0" alt="" />
+                                            <img src="/img/testimonial-2.jpg" className="img-fluid rounded-circle flex-shrink-0" alt="" />
                                             <div className="position-absolute" style={{ top: "15px", right: "20px" }}>
                                                 <i className="fa fa-quote-right fa-2x"></i>
                                             </div>
@@ -158,7 +158,7 @@ const Testimonial = () => {
                                     </div>
                                     <div className="testimonial-item rounded bg-light">
                                         <div className="d-flex mb-3">
-                                            <img src="img/testimonial-3.jpg" className="img-fluid rounded-circle flex-shrink-0" alt="" />
+                                            <img src="/img/testimonial-3.jpg" className="img-fluid rounded-circle flex-shrink-0" alt="" />
                                             <div className="position-absolute" style={{ top: "15px", right: "20px" }}>
                                                 <i className="fa fa-quote-right fa-2x"></i>
                                             </div>
@@ -180,7 +180,7 @@ const Testimonial = () => {
                                     </div>
                                     <div className="testimonial-item rounded bg-light">
                                         <div className="d-flex mb-3">
-                                            <img src="img/testimonial-4.jpg" className="img-fluid rounded-circle flex-shrink-0" alt="" />
+                                            <img src="/img/testimonial-4.jpg" className="img-fluid rounded-circle flex-shrink-0" alt="" />
                                             <div className="position-absolute" style={{ top: "15px", right: "20px" }}>
                                                 <i className="fa fa-quote-right fa-2x"></i>
                                             </div>

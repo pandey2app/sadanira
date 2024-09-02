@@ -11,7 +11,7 @@ const Navbar = () => {
                     <nav className="navbar navbar-light navbar-expand-lg py-2">
                         <Link to="/" className="navbar-brand">
                             {/* <h1 className="fw-bold mb-0 text-red">सदा<span className="text-dark">नीरा</span> </h1> */}
-                            <img src="img/logo/header-text.png" height='60px' alt="Sadanira" />
+                            <img src="/img/logo/header-text.png" height='60px' alt="Sadanira" />
                         </Link>
                         <button className="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                             <span className="fa fa-bars text-primary"></span>

@@ -5,7 +5,7 @@ const About = () => {
   return (
     <>
       <div className='d-flex wow bounceInDown justify-content-center mt-0'>
-        <img src="img/logo/logo-big.png" className="" alt="" />
+        <img src="/img/logo/logo-big.png" className="" alt="" />
       </div>
       <div>
         <h2 className={`fw-bold fs-1 wow bounceInUp text-center bg-primary py-2 ${styles.balooHeadings}`}>सदानीरा महोत्सव</h2>

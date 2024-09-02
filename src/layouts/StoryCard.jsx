@@ -15,8 +15,8 @@ const StoryCard = () => {
                             <h2 className="card-title">The Best Story title</h2>
                             <p style={{ fontSize: '15px', padding: '2px' }}>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                             <div className='d-flex justify-content-between mt-n1'>
-                                <Link to='#'><img src={'img/writing.png'} alt="" height={'20px'} className='me-1 mb-1' /><cite>Ramish Pandey</cite></Link>
-                                <Link to='#'>read <img src={'img/book.png'} alt="" height={'17px'} className='ms-1 mb-1' /></Link>
+                                <Link to='#'><img src={'/img/writing.png'} alt="" height={'20px'} className='me-1 mb-1' /><cite>Ramish Pandey</cite></Link>
+                                <Link to='#'>read <img src={'/img/book.png'} alt="" height={'17px'} className='ms-1 mb-1' /></Link>
                             </div>
                         </div>
                     </div>

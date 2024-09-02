@@ -41,7 +41,7 @@ const TeamSection = () => {
                             <div className="row g-4">
                                 <div className="col-lg-6 wow bounceInUp" data-wow-delay="0.1s">
                                     <div className="menu-item d-flex align-items-center">
-                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="img/aditya-team-sm.jpg" alt="" />
+                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="/img/aditya-team-sm.jpg" alt="" />
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <div className="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Aditya Prakash Pandey</h4>
@@ -53,7 +53,7 @@ const TeamSection = () => {
                                 </div>
                                 <div className="col-lg-6 wow bounceInUp" data-wow-delay="0.2s">
                                     <div className="menu-item d-flex align-items-center">
-                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="img/sarvesh-team-sm.jpg" alt="" />
+                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="/img/sarvesh-team-sm.jpg" alt="" />
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <div className="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Sarvesh Tiwari 'Shreemukh'</h4>
@@ -65,7 +65,7 @@ const TeamSection = () => {
                                 </div>
                                 <div className="col-lg-6 wow bounceInUp" data-wow-delay="0.3s">
                                     <div className="menu-item d-flex align-items-center">
-                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="img/vivek-team-sm.jpg" alt="" />
+                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="/img/vivek-team-sm.jpg" alt="" />
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <div className="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Vivek Pathak</h4>
@@ -77,7 +77,7 @@ const TeamSection = () => {
                                 </div>
                                 <div className="col-lg-6 wow bounceInUp" data-wow-delay="0.4s">
                                     <div className="menu-item d-flex align-items-center">
-                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="img/sarvesh-team-sm.jpg" alt="" />
+                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="/img/sarvesh-team-sm.jpg" alt="" />
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <div className="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Sarvesh</h4>
@@ -89,7 +89,7 @@ const TeamSection = () => {
                                 </div>
                                 <div className="col-lg-6 wow bounceInUp" data-wow-delay="0.5s">
                                     <div className="menu-item d-flex align-items-center">
-                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="img/menu-05.jpg" alt="" />
+                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="/img/menu-05.jpg" alt="" />
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <div className="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Bacon</h4>
@@ -101,7 +101,7 @@ const TeamSection = () => {
                                 </div>
                                 <div className="col-lg-6 wow bounceInUp" data-wow-delay="0.6s">
                                     <div className="menu-item d-flex align-items-center">
-                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="img/menu-06.jpg" alt="" />
+                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="/img/menu-06.jpg" alt="" />
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <div className="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Rahul</h4>
@@ -113,7 +113,7 @@ const TeamSection = () => {
                                 </div>
                                 <div className="col-lg-6 wow bounceInUp" data-wow-delay="0.7s">
                                     <div className="menu-item d-flex align-items-center">
-                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="img/menu-07.jpg" alt="" />
+                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="/img/menu-07.jpg" alt="" />
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <div className="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Rajkumar</h4>
@@ -125,7 +125,7 @@ const TeamSection = () => {
                                 </div>
                                 <div className="col-lg-6 wow bounceInUp" data-wow-delay="0.8s">
                                     <div className="menu-item d-flex align-items-center">
-                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="img/menu-08.jpg" alt="" />
+                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="/img/menu-08.jpg" alt="" />
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <div className="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Raju</h4>
@@ -141,7 +141,7 @@ const TeamSection = () => {
                             <div className="row g-4">
                                 <div className="col-lg-6">
                                     <div className="menu-item d-flex align-items-center">
-                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="img/menu-01.jpg" alt="" />
+                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="/img/menu-01.jpg" alt="" />
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <div className="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Argentinian</h4>
@@ -153,7 +153,7 @@ const TeamSection = () => {
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="menu-item d-flex align-items-center">
-                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="img/menu-03.jpg" alt="" />
+                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="/img/menu-03.jpg" alt="" />
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <div className="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Crispy</h4>
@@ -165,7 +165,7 @@ const TeamSection = () => {
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="menu-item d-flex align-items-center">
-                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="img/menu-05.jpg" alt="" />
+                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="/img/menu-05.jpg" alt="" />
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <div className="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Sabudana Tikki</h4>
@@ -177,7 +177,7 @@ const TeamSection = () => {
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="menu-item d-flex align-items-center">
-                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="img/menu-07.jpg" alt="" />
+                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="/img/menu-07.jpg" alt="" />
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <div className="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Blooming</h4>
@@ -189,7 +189,7 @@ const TeamSection = () => {
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="menu-item d-flex align-items-center">
-                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="img/menu-08.jpg" alt="" />
+                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="/img/menu-08.jpg" alt="" />
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <div className="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Argentinian</h4>
@@ -201,7 +201,7 @@ const TeamSection = () => {
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="menu-item d-flex align-items-center">
-                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="img/menu-03.jpg" alt="" />
+                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="/img/menu-03.jpg" alt="" />
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <div className="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Lemon</h4>
@@ -213,7 +213,7 @@ const TeamSection = () => {
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="menu-item d-flex align-items-center">
-                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="img/menu-02.jpg" alt="" />
+                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="/img/menu-02.jpg" alt="" />
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <div className="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Water Drink</h4>
@@ -225,7 +225,7 @@ const TeamSection = () => {
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="menu-item d-flex align-items-center">
-                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="img/menu-01.jpg" alt="" />
+                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="/img/menu-01.jpg" alt="" />
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <div className="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Salty lemon</h4>
@@ -241,7 +241,7 @@ const TeamSection = () => {
                             <div className="row g-4">
                                 <div className="col-lg-6">
                                     <div className="menu-item d-flex align-items-center">
-                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="img/menu-01.jpg" alt="" />
+                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="/img/menu-01.jpg" alt="" />
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <div className="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Crispy water</h4>
@@ -253,7 +253,7 @@ const TeamSection = () => {
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="menu-item d-flex align-items-center">
-                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="img/menu-02.jpg" alt="" />
+                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="/img/menu-02.jpg" alt="" />
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <div className="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Juice</h4>
@@ -265,7 +265,7 @@ const TeamSection = () => {
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="menu-item d-flex align-items-center">
-                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="img/menu-03.jpg" alt="" />
+                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="/img/menu-03.jpg" alt="" />
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <div className="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Orange</h4>
@@ -277,7 +277,7 @@ const TeamSection = () => {
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="menu-item d-flex align-items-center">
-                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="img/sarvesh-team-sm.jpg" alt="" />
+                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="/img/sarvesh-team-sm.jpg" alt="" />
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <div className="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Apple Juice</h4>
@@ -289,7 +289,7 @@ const TeamSection = () => {
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="menu-item d-flex align-items-center">
-                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="img/menu-05.jpg" alt="" />
+                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="/img/menu-05.jpg" alt="" />
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <div className="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Banana</h4>
@@ -301,7 +301,7 @@ const TeamSection = () => {
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="menu-item d-flex align-items-center">
-                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="img/menu-06.jpg" alt="" />
+                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="/img/menu-06.jpg" alt="" />
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <div className="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Sweet Water</h4>
@@ -313,7 +313,7 @@ const TeamSection = () => {
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="menu-item d-flex align-items-center">
-                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="img/menu-07.jpg" alt="" />
+                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="/img/menu-07.jpg" alt="" />
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <div className="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Hot Coffee</h4>
@@ -325,7 +325,7 @@ const TeamSection = () => {
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="menu-item d-flex align-items-center">
-                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="img/menu-08.jpg" alt="" />
+                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="/img/menu-08.jpg" alt="" />
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <div className="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Sweet Potato</h4>
@@ -341,7 +341,7 @@ const TeamSection = () => {
                             <div className="row g-4">
                                 <div className="col-lg-6">
                                     <div className="menu-item d-flex align-items-center">
-                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="img/menu-06.jpg" alt="" />
+                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="/img/menu-06.jpg" alt="" />
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <div className="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Sabudana Tikki</h4>
@@ -353,7 +353,7 @@ const TeamSection = () => {
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="menu-item d-flex align-items-center">
-                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="img/menu-07.jpg" alt="" />
+                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="/img/menu-07.jpg" alt="" />
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <div className="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Crispy</h4>
@@ -365,7 +365,7 @@ const TeamSection = () => {
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="menu-item d-flex align-items-center">
-                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="img/menu-09.jpg" alt="" />
+                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="/img/menu-09.jpg" alt="" />
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <div className="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Pizza</h4>
@@ -377,7 +377,7 @@ const TeamSection = () => {
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="menu-item d-flex align-items-center">
-                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="img/menu-02.jpg" alt="" />
+                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="/img/menu-02.jpg" alt="" />
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <div className="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Bacon</h4>
@@ -389,7 +389,7 @@ const TeamSection = () => {
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="menu-item d-flex align-items-center">
-                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="img/menu-03.jpg" alt="" />
+                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="/img/menu-03.jpg" alt="" />
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <div className="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Chicken</h4>
@@ -401,7 +401,7 @@ const TeamSection = () => {
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="menu-item d-flex align-items-center">
-                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="img/menu-05.jpg" alt="" />
+                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="/img/menu-05.jpg" alt="" />
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <div className="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Blooming</h4>
@@ -413,7 +413,7 @@ const TeamSection = () => {
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="menu-item d-flex align-items-center">
-                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="img/menu-07.jpg" alt="" />
+                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="/img/menu-07.jpg" alt="" />
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <div className="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Sweet</h4>
@@ -425,7 +425,7 @@ const TeamSection = () => {
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="menu-item d-flex align-items-center">
-                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="img/menu-09.jpg" alt="" />
+                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="/img/menu-09.jpg" alt="" />
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <div className="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Argentinian</h4>
@@ -441,7 +441,7 @@ const TeamSection = () => {
                             <div className="row g-4">
                                 <div className="col-lg-6">
                                     <div className="menu-item d-flex align-items-center">
-                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="img/menu-06.jpg" alt="" />
+                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="/img/menu-06.jpg" alt="" />
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <div className="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Sabudana Tikki</h4>
@@ -453,7 +453,7 @@ const TeamSection = () => {
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="menu-item d-flex align-items-center">
-                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="img/menu-07.jpg" alt="" />
+                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="/img/menu-07.jpg" alt="" />
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <div className="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Crispy</h4>
@@ -465,7 +465,7 @@ const TeamSection = () => {
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="menu-item d-flex align-items-center">
-                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="img/menu-09.jpg" alt="" />
+                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="/img/menu-09.jpg" alt="" />
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <div className="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Pizza</h4>
@@ -477,7 +477,7 @@ const TeamSection = () => {
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="menu-item d-flex align-items-center">
-                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="img/menu-02.jpg" alt="" />
+                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="/img/menu-02.jpg" alt="" />
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <div className="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Bacon</h4>
@@ -489,7 +489,7 @@ const TeamSection = () => {
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="menu-item d-flex align-items-center">
-                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="img/menu-03.jpg" alt="" />
+                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="/img/menu-03.jpg" alt="" />
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <div className="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Chicken</h4>
@@ -501,7 +501,7 @@ const TeamSection = () => {
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="menu-item d-flex align-items-center">
-                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="img/menu-05.jpg" alt="" />
+                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="/img/menu-05.jpg" alt="" />
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <div className="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Blooming</h4>
@@ -513,7 +513,7 @@ const TeamSection = () => {
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="menu-item d-flex align-items-center">
-                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="img/menu-07.jpg" alt="" />
+                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="/img/menu-07.jpg" alt="" />
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <div className="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Sweet</h4>
@@ -525,7 +525,7 @@ const TeamSection = () => {
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="menu-item d-flex align-items-center">
-                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="img/menu-09.jpg" alt="" />
+                                        <img className="flex-shrink-0 img-fluid rounded-circle" src="/img/menu-09.jpg" alt="" />
                                         <div className="w-100 d-flex flex-column text-start ps-4">
                                             <div className="d-flex justify-content-between border-bottom border-primary pb-2 mb-2">
                                                 <h4>Argentinian</h4>

@@ -8,7 +8,7 @@ const Footer = () => {
                     <div className="col-lg-3 col-md-6">
                         <div className="footer-item">
                             {/* <h1 className="text-primary">Cater<span className="text-dark">Serv</span></h1> */}
-                            <img src="img/logo/header-text.png" height='40px' alt="Sadanira" />
+                            <img src="/img/logo/header-text.png" height='40px' alt="Sadanira" />
                             <p className="lh-lg my-2 fs-6  text-dark" >सदानीरा महोत्सव साहित्य की शक्ति, विकास को बढ़ावा देने और सबसे दूरस्थ स्थानों में भी साहित्य के प्रति प्रेम को बढ़ावा देने का एक प्रमाण है।</p>
                             <div className="footer-icon d-flex">
                                 <a className="btn btn-primary btn-sm-square me-2 rounded-circle" href="facebook.com"><i className="fab fa-facebook-f"></i></a>
@@ -45,22 +45,22 @@ const Footer = () => {
                             <h4 className="mb-4">Social Gallery</h4>
                             <div className="row g-2">
                                 <div className="col-4">
-                                     <img src="img/sarvesh-team.jpg" className="img-fluid rounded-circle border border-primary p-2" alt=""/>
+                                     <img src="/img/sarvesh-team.jpg" className="img-fluid rounded-circle border border-primary p-2" alt=""/>
                                 </div>
                                 <div className="col-4">
-                                     <img src="img/vivek-team.jpg" className="img-fluid rounded-circle border border-primary p-2" alt=""/>
+                                     <img src="/img/vivek-team.jpg" className="img-fluid rounded-circle border border-primary p-2" alt=""/>
                                 </div>
                                 <div className="col-4">
-                                     <img src="img/aditya-team.jpg" className="img-fluid rounded-circle border border-primary p-2" alt=""/>
+                                     <img src="/img/aditya-team.jpg" className="img-fluid rounded-circle border border-primary p-2" alt=""/>
                                 </div>
                                 {/* <div className="col-4">
-                                     <img src="img/menu-04.jpg" className="img-fluid rounded-circle border border-primary p-2" alt=""/>
+                                     <img src="/img/menu-04.jpg" className="img-fluid rounded-circle border border-primary p-2" alt=""/>
                                 </div>
                                 <div className="col-4">
-                                     <img src="img/menu-05.jpg" className="img-fluid rounded-circle border border-primary p-2" alt=""/>
+                                     <img src="/img/menu-05.jpg" className="img-fluid rounded-circle border border-primary p-2" alt=""/>
                                 </div>
                                 <div className="col-4">
-                                     <img src="img/menu-06.jpg" className="img-fluid rounded-circle border border-primary p-2" alt=""/>
+                                     <img src="/img/menu-06.jpg" className="img-fluid rounded-circle border border-primary p-2" alt=""/>
                                 </div> */}
                             </div>
                         </div>
