@@ -116,7 +116,7 @@ const JoinUs = () => {
                                 </div>
                                 <div className="col-lg-4 col-md-6">
                                     <input
-                                        type="date" className="form-control border-primary p-2" name='birthDate' placeholder="Select Birth Date" value={formData.birthDate}
+                                        type="text" className="form-control border-primary p-2" name='birthDate' placeholder="Select Birth Date" value={formData.birthDate}
                                         onChange={inputChange}
                                         onFocus={(e) => (e.target.type = 'date')}
                                         onBlur={(e) => (e.target.type = 'text')}
