@@ -30,7 +30,7 @@ const ContactUsMessages = () => {
                     </thead>
                     <tbody>
                         {
-                            forms.length > 0 ? forms.map((form, index)=>(
+                           forms && forms.length > 0 ? forms.map((form, index)=>(
                                 <tr key={index}>
                                     <th scope="row">{index+1}</th>
                                     <td>{form.name}</td>
