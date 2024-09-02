@@ -21,4 +21,10 @@ export const addContactUsToAPI = async (contactUs) => {
 };
 
 export const deleteContactUsFromAPI = async (id) => {
+    try {
+        await axios.get(`${process.env.REACT_APP_ROOT_ADDRESS}/contactUs/delete/${id}`);
+    } catch (error) {
+        console.log('Error deleting contact us:', error.response? error.response.data.error.errorResponse : error.message);
+        throw error?.response.data.error.errorResponse.errmsg;
+    }
 }

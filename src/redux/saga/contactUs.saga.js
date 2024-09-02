@@ -6,7 +6,7 @@ import { addContactUsError, deleteContactUsError, getContactUsError, getContactU
 function* getContactUs(){
     try {
         let contactUs = yield getContactUsFromAPI()
-        yield put(getContactUsSuccess(contactUs))
+        yield put(getContactUsSuccess(...contactUs))
     } catch (error) {
         yield put(getContactUsError(error.message))
     }
