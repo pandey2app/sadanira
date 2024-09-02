@@ -16,7 +16,7 @@ const Hero = () => {
                         {/* <small className="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-4 animated bounceInDown">Welcome to CaterServ</small> */}
                         <h1 className="display-1 mb-4 animated bounceInDown" style={{ fontFamily: "'Baloo 2', cursive" }}>Bringing stories to  <span className="text-primary">where life grows.</span> Let's take literature to the fields.</h1>
                         <Link to="contact-us" className="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 me-4 animated bounceInLeft">Contact Us</Link>
-                        <Link to="/join" className="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill">Join Us</Link>
+                        <Link to="/join" className="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 me-4 animated bounceInLeft">Join Us</Link>
                         {/* <Link to="about-us" className="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 animated bounceInLeft">Know More</Link> */}
                     </div>
                     <div className="col-lg-5 col-md-12 d-flex justify-content-center flex-column " >
