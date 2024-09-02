@@ -19,7 +19,7 @@ const Members = () => {
       <h3 className='text-center px-2 mb-3 text-success text-bold'>Total {users.length} members are available now on sadaneera!</h3>
       <section className='d-flex gap-3 flex-wrap'>
         {
-          users.length && users.map((member, index) => (
+          users.length > 0 && users.map((member, index) => (
             <UserProfileCard key={index} creator={member} />
           ))
         }
