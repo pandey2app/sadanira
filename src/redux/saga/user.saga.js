@@ -1,7 +1,7 @@
 import { put, takeLatest } from "redux-saga/effects";
 import { ADD_USER_START, DELETE_USER_START, GET_USER_BY_ID_START, GET_USER_START, LOGIN_USER_START, LOGOUT_USER_START, UPDATE_USER_START } from "../constants/user.constant";
 import { addUserError, deleteUserError, getUserByIdError, getUserByIdSuccess, getUserError, getUserStart, getUserSuccess, loginUserError, loginUserSuccess, logoutUserError, logoutUserSuccess, updateUserError } from "../actions/user.action";
-import { addUserToAPI, deleteUserFromAPI, getUserByIdFromAPI, getUserFromAPI, loginUserToAPI, updateUserToAPI } from "../services/user.service";
+import { addUserToAPI, deleteUserFromAPI, getUserByIdFromAPI, getUserFromAPI, loginUserToAPI, logoutUserFromAPI, updateUserToAPI } from "../services/user.service";
 
 function* getUser(){    
     try {
@@ -60,9 +60,10 @@ function* loginUser({payload}){
 
 function* logoutUser(){
     try {
-        yield put(logoutUserSuccess())
+        const response = yield logoutUserFromAPI()
+        yield put(logoutUserSuccess(response))
     } catch (error) {
-        yield put(logoutUserError(error.message))
+        yield put(logoutUserError(error))
     }
 }
 

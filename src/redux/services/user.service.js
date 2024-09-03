@@ -8,7 +8,7 @@ export const getUserFromAPI = async () => {
         return response.data.user;        
     } catch (error) {
         console.error('Error fetching user data:', error);
-        throw error.response.data.error;
+        throw error?.response?.data.error;
     }
 }
 
@@ -45,6 +45,16 @@ export const loginUserToAPI = async (user) => {
         return response.data;
     } catch (error) {        
         let message = `Error logging in user: ${error.response? error.response.data.error : error.message}`;
+        throw message;
+    }
+}
+
+export const logoutUserFromAPI = async (user) => {
+    try {
+        const response = await axios.get(`${process.env.REACT_APP_ROOT_ADDRESS}/user/logout`, { withCredentials: true });
+        return response.data;
+    } catch (error) {        
+        let message = `Error logging out user: ${error.response? error.response.data.error : error.message}`;
         throw message;
     }
 }

@@ -20,6 +20,7 @@ import Auth from '../pages/admin/Auth';
 import Login from '../pages/Login';
 import AuthUser from '../pages/user/AuthUser';
 import ProfileDashboard from '../pages/user/ProfileDashboard';
+import Logout from '../helpers/Logout';
 
 const Router = () => {
   return (
@@ -33,6 +34,7 @@ const Router = () => {
       <Route path="/members" element={<Members />} />
       <Route path="/join" element={<Join />} />
       <Route path="/login" element={<Login />} />
+      <Route path="/logout" element={<Logout />} />
       <Route path="/testimonial" element={<Testimonial />} />
 
       <Route path="events" element={<Events />} >

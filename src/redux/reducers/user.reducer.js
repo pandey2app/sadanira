@@ -8,7 +8,10 @@ const initialState = {
     loginError: null,
     addUserError: null,
     loginResponse: null,
+    logoutResponse: null,
 }
+
+// User Reducer
 export const userReducer = (state = initialState, action) => {
     switch (action.type) {
         case ADD_USER_SUCCESS:
@@ -55,6 +58,11 @@ export const userReducer = (state = initialState, action) => {
             return {
                 ...state,
                 isLoggedIn: false,
+                loginError: null,
+                currentUser: {},
+                addUserError: null,
+                loginResponse: null,
+                logoutResponse: action.payload,
             }
         default:
             return state;
