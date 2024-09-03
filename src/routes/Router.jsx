@@ -17,6 +17,9 @@ import Creaters from '../pages/Creaters';
 import Categories from '../pages/Categories';
 import ContactUsMessages from '../pages/admin/ContactUsMessages';
 import Auth from '../pages/admin/Auth';
+import Login from '../pages/Login';
+import AuthUser from '../pages/user/AuthUser';
+import ProfileDashboard from '../pages/user/ProfileDashboard';
 
 const Router = () => {
   return (
@@ -29,6 +32,7 @@ const Router = () => {
       <Route path="/contact-us" element={<Contact />} />
       <Route path="/members" element={<Members />} />
       <Route path="/join" element={<Join />} />
+      <Route path="/login" element={<Login />} />
       <Route path="/testimonial" element={<Testimonial />} />
 
       <Route path="events" element={<Events />} >
@@ -44,6 +48,10 @@ const Router = () => {
 
       <Route path="admin" element={<Auth />}>
           <Route path="contact-us-messages" element={<ContactUsMessages />}/>
+      </Route>
+
+      <Route path='user' element={<AuthUser />}>
+        <Route path='profile-page' element={<ProfileDashboard />} />
       </Route>
 
       <Route path="*" element={<NotFound />} />

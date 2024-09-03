@@ -24,7 +24,10 @@ const userValidationSchema = yup.object({
     password: yup
         .string()
         .required('Password must be provided')
-        .min(6, 'Password must be at least 6 characters long'),
+        .matches(
+            /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/,
+            'Password must contain at least 8 characters, including uppercase, lowercase, digits, and special characters'
+        ),
     image: yup
         .string()
         .default('image'),
