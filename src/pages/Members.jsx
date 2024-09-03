@@ -1,14 +1,14 @@
 import React, { useCallback, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { getUserStart } from '../redux/actions/user.action'
+import { getUsersStart } from '../redux/actions/users.action'
 import UserProfileCard from '../layouts/UserProfileCard'
 
 const Members = () => {
   const dispatch = useDispatch()
-  const users = useSelector((state) => state.user.users)
+  const users = useSelector((state) => state.users.users)
 
   const getUsers = useCallback(() => {
-    dispatch(getUserStart())
+    dispatch(getUsersStart())
   }, [dispatch])
   useEffect(() => {
     getUsers()

@@ -1,22 +1,31 @@
 import axios from "axios"
 
 
-export const getUserFromAPI = async () => {
-    const users = []
-    
-    await axios.get(`${process.env.REACT_APP_ROOT_ADDRESS}/users`, {
-        withCredentials: true
-    })
-    .then(response => users.push(...response.data.users))
-    .catch(err => {return err})
-    return users
+export const getUserFromAPI = async () => { 
+    try {
+        const response = await axios.get(`${process.env.REACT_APP_ROOT_ADDRESS}/user`, { withCredentials: true });
+        
+        return response.data.user;        
+    } catch (error) {
+        console.error('Error fetching user data:', error);
+        return null;
+    }
+}
+
+export const getUserByIdFromAPI = async (id) => { 
+    try {
+        const response = await axios.get(`${process.env.REACT_APP_ROOT_ADDRESS}/user/${id}`, { withCredentials: true });
+        
+        return response.data.user;        
+    } catch (error) {
+        console.error('Error fetching user data:', error);
+        return null;
+    }
 }
 
 export const addUserToAPI = async (userData) => {
     try {
-        const response = await axios.post(`${process.env.REACT_APP_ROOT_ADDRESS}/users/add`, userData, {
-            withCredentials: true
-        });
+        const response = await axios.post(`${process.env.REACT_APP_ROOT_ADDRESS}/user/add`, userData, { withCredentials: true });
         return response.data;
     } catch (error) {
         let msg = `Error adding user: ${error.response ? error.response.data.error : error.message}`;
@@ -32,9 +41,9 @@ export const deleteUserFromAPI = async (id) => {
 
 export const loginUserToAPI = async (user) => {
     try {
-        const response = await axios.post(`${process.env.REACT_APP_ROOT_ADDRESS}/users/login`, user, {
-            withCredentials: true
-        });
+        const response = await axios.post(`${process.env.REACT_APP_ROOT_ADDRESS}/user/login`, user, { withCredentials: true });
+        console.log(response.data);
+        
         return response.data;
     } catch (error) {        
         let message = `Error logging in user: ${error.response? error.response.data.error : error.message}`;

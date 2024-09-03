@@ -1,13 +1,16 @@
 import React from 'react';
+import useGetUser from '../../hooks/useGetUser';
 
 const ProfileDashboard = () => {
-  // Sample user data
-  const user = {
-    name: 'John Doe',
-    email: 'john.doe@example.com',
-    bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  };
+  const user = useGetUser()
 
+  if (!Object.keys(user).length) {
+    return (
+      <div className='p-4' style={{minHeight : '270px'}}>
+        <h4 className='container-fluid text-center text-danger'>error fetching user's data</h4>
+      </div>
+    )
+  }
   return (
     <div className="d-flex">
       {/* Sidebar */}
@@ -37,19 +40,19 @@ const ProfileDashboard = () => {
             <div className="col-md-4 mb-4">
               <div className="card p-3 text-center">
                 <img
-                  src="/img/aditya-team-lead.jpg"  // Replace with actual path or URL
+                  src={user.image}  // Replace with actual path or URL
                   alt="Profile"
                   className="img-fluid rounded-circle mx-auto mb-3"
                   style={{ width: '150px', height: '150px', objectFit: 'cover' }}
                 />
                 <h2>{user.name}</h2>
                 <p className="text-muted">{user.email}</p>
-                <p>{user.bio}</p>
+                <p>{user.userCategory}</p>
               </div>
             </div>
 
             {/* Dashboard Sections */}
-            <div className="col-md-8" style={{minHeight: "400px"}}>
+            <div className="col-md-8" style={{ minHeight: "400px" }}>
               <div className="row">
                 {/* User Stats */}
                 <div className="col-lg-6 mb-4">
@@ -62,7 +65,7 @@ const ProfileDashboard = () => {
                 </div>
 
                 {/* Recent Activity */}
-                <div className="col-lg-6 mb-4" style={{minHeight: "400px"}}>
+                <div className="col-lg-6 mb-4" style={{ minHeight: "400px" }}>
                   <div className="card p-3">
                     <h5>Recent Activity</h5>
                     <ul className="list-unstyled">

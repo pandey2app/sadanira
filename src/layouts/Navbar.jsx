@@ -3,12 +3,15 @@ import React from 'react'
 import ModalSearch from '../components/ModalSearch'
 import { Link } from 'react-router-dom'
 import ToggleButton from '../components/ToggleButton';
+import useGetUser from '../hooks/useGetUser';
 
 const Navbar = () => {
+    const user = useGetUser()
+    
     return (
         <>
             <div className="container-fluid nav-bar">
-                <div className="container">
+                <div className="mx-3">
                     <nav className="navbar navbar-light navbar-expand-lg py-2">
                         <Link to="/" className="navbar-brand">
                             {/* <h1 className="fw-bold mb-0 text-red">सदा<span className="text-dark">नीरा</span> </h1> */}
@@ -54,7 +57,9 @@ const Navbar = () => {
                                 <Link to="/members" className="nav-item nav-link">Members</Link>
                             </div>
                             <button className="btn-search btn btn-primary btn-md-square me-4 rounded-circle d-none d-lg-inline-flex" data-bs-toggle="modal" data-bs-target="#searchModal"><i className="fas fa-search"></i></button>
-                            <ToggleButton first='Login' second="Join-Us" firstLink={'/login'} secondLink={'/join'} />
+                            {!user.name && <ToggleButton first='Login' second="Join-Us" firstLink={'/login'} secondLink={'/join'} />}
+                            {user.name && <ToggleButton first='Logout' second="Profile" firstLink={'/logout'} secondLink={'/user/profile-page'} />}
+                            {user.name && <Link to='/user/profile-page'><img src={user.image} alt={user.nmae} className="img-fluid rounded-circle ms-2" style={{ width: '45px', height: '45px', objectFit: 'cover' }}/></Link>}
                         </div>
                     </nav>
                 </div>

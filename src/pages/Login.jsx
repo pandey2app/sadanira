@@ -28,14 +28,14 @@ const Login = () => {
             await loginValidationSchema.validate(formData, { abortEarly: false })
 
             dispatch(loginUserStart(formData))
-            
             setTimeout(() =>{
                 if(errorMessage){
                     setFormData(loginInitial)
                     setIsChecked(false)
                     setErrors({})
-                }else{
-                    navigate('/dashboard')
+                }else if(successMessage){
+                    sessionStorage.setItem('currentUser', true)
+                    navigate('/user')
                 }
             },1000)
 

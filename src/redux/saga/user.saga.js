@@ -1,14 +1,23 @@
 import { put, takeLatest } from "redux-saga/effects";
-import { ADD_USER_START, DELETE_USER_START, GET_USER_START, LOGIN_USER_START, LOGOUT_USER_START, UPDATE_USER_START } from "../constants/user.constant";
-import { addUserError, deleteUserError, getUserError, getUserStart, getUserSuccess, loginUserError, loginUserSuccess, logoutUserError, logoutUserSuccess, updateUserError } from "../actions/user.action";
-import { addUserToAPI, deleteUserFromAPI, getUserFromAPI, loginUserToAPI, updateUserToAPI } from "../services/user.service";
+import { ADD_USER_START, DELETE_USER_START, GET_USER_BY_ID_START, GET_USER_START, LOGIN_USER_START, LOGOUT_USER_START, UPDATE_USER_START } from "../constants/user.constant";
+import { addUserError, deleteUserError, getUserByIdError, getUserByIdSuccess, getUserError, getUserStart, getUserSuccess, loginUserError, loginUserSuccess, logoutUserError, logoutUserSuccess, updateUserError } from "../actions/user.action";
+import { addUserToAPI, deleteUserFromAPI, getUserByIdFromAPI, getUserFromAPI, loginUserToAPI, updateUserToAPI } from "../services/user.service";
 
-function* getUser(){
+function* getUser(){    
     try {
-        let users = yield getUserFromAPI()
-        yield put(getUserSuccess(users))
+        let user = yield getUserFromAPI()
+        yield put(getUserSuccess(user))
     } catch (error) {
         yield put(getUserError(error.message))
+    }
+}
+
+function* getUserById({payload}){    
+    try {
+        let user = yield getUserByIdFromAPI(payload)
+        yield put(getUserByIdSuccess(user))
+    } catch (error) {
+        yield put(getUserByIdError(error.message))
     }
 }
 
@@ -43,6 +52,8 @@ function* deleteUser({payload}){
 function* loginUser({payload}){
     try {
         const response = yield loginUserToAPI(payload)
+        console.log(response);
+        
         yield put(loginUserSuccess(response))
     } catch (error) {       
         yield put(loginUserError(error))
@@ -60,6 +71,7 @@ function* logoutUser(){
 export default function* user(){
     yield takeLatest(ADD_USER_START, addUser)
     yield takeLatest(GET_USER_START, getUser)
+    yield takeLatest(GET_USER_BY_ID_START, getUserById)
     yield takeLatest(UPDATE_USER_START, updateUser)
     yield takeLatest(DELETE_USER_START, deleteUser)
     yield takeLatest(LOGIN_USER_START, loginUser)
