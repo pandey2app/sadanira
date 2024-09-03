@@ -8,7 +8,7 @@ export const getUserFromAPI = async () => {
         return response.data.user;        
     } catch (error) {
         console.error('Error fetching user data:', error);
-        return null;
+        throw error.response.data.error;
     }
 }
 
@@ -42,8 +42,6 @@ export const deleteUserFromAPI = async (id) => {
 export const loginUserToAPI = async (user) => {
     try {
         const response = await axios.post(`${process.env.REACT_APP_ROOT_ADDRESS}/user/login`, user, { withCredentials: true });
-        console.log(response.data);
-        
         return response.data;
     } catch (error) {        
         let message = `Error logging in user: ${error.response? error.response.data.error : error.message}`;

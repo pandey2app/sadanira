@@ -3,16 +3,14 @@ import { Outlet, useNavigate } from 'react-router-dom'
 
 const AuthUser = () => {
   const navigate = useNavigate()
-  const [currentUser, setCurrentUser] = useState(sessionStorage.getItem('currentUser'))
+  const [isLoggedIn, setIsLoggedIn] = useState(localStorage.getItem('isLoggedIn'))
 
   const authenticate = useCallback(()=>{
-    if(currentUser){
-      console.log('Authentication successful')      
-    }else{
-      setCurrentUser(false)
+    if(!isLoggedIn){
+      setIsLoggedIn(false)
       navigate('/login')
     }
-  },[navigate, currentUser, setCurrentUser])
+  },[navigate, isLoggedIn])
 
   useEffect(()=>{
     authenticate()

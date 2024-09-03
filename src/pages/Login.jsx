@@ -9,12 +9,10 @@ import { useNavigate } from 'react-router-dom'
 const Login = () => {
     const [formData, setFormData, inputChange] = useFormData(loginInitial)
     const [errors, setErrors] = useState({})
-    const [errorMessage, setErrorMessage] = useState('')
-    const [successMessage, setSuccessMessage] = useState('')
     const [isChecked, setIsChecked] = useState(false);
     const dispatch = useDispatch()
     const loginError = useSelector(state=> state.user.loginError)
-    const loginResponce = useSelector(state=> state.user.loginResponce)
+    const loginResponse = useSelector(state=> state.user.loginResponse)
     const navigate = useNavigate()
 
     const handlecheckBox =(e) => {
@@ -28,16 +26,6 @@ const Login = () => {
             await loginValidationSchema.validate(formData, { abortEarly: false })
 
             dispatch(loginUserStart(formData))
-            setTimeout(() =>{
-                if(errorMessage){
-                    setFormData(loginInitial)
-                    setIsChecked(false)
-                    setErrors({})
-                }else if(successMessage){
-                    sessionStorage.setItem('currentUser', true)
-                    navigate('/user')
-                }
-            },1000)
 
         } catch (error) {
             const newErrors = {}
@@ -54,16 +42,13 @@ const Login = () => {
 
     useEffect(() => {
         if (loginError) {
-            setErrorMessage(loginError)
-        } else {
-            setErrorMessage('')
+            setFormData(loginInitial);
+            setIsChecked(false);
+            setErrors({});
+        } else if (loginResponse) {
+            navigate('/user/profile-page');
         }
-        if (loginResponce) {
-            setSuccessMessage(loginResponce)
-        }else{
-            setSuccessMessage('')
-        }
-    },[loginError, loginResponce]);
+    }, [loginError, loginResponse, setFormData, navigate]);
 
     return (
         <div className="container-fluid contact py-3 wow bounceInUp" data-wow-delay="0.1s">
@@ -113,9 +98,9 @@ const Login = () => {
                                     <label className="form-check-label" htmlFor="rememberMe">Remember Me</label>
                                 </div>
                                 <div className="col-12 text-center">
-                                    {errorMessage && <div className="text-danger mt-0 mb-2">{errorMessage}</div>}
+                                    {loginError && <div className="text-danger mt-0 mb-2">{loginError}</div>}
                                     <button type="submit" className="btn btn-primary px-5 py-3 rounded-pill">Login</button>
-                                    {successMessage && <div className="text-success mt-2 mb-0">{successMessage}</div>}
+                                    {loginResponse && <div className="text-success mt-2 mb-0">{loginResponse}</div>}
                                 </div>
                             </form>
                         </div>

@@ -4,7 +4,7 @@ import useGetUser from '../../hooks/useGetUser';
 const ProfileDashboard = () => {
   const user = useGetUser()
 
-  if (!Object.keys(user).length) {
+  if (!user){
     return (
       <div className='p-4' style={{minHeight : '270px'}}>
         <h4 className='container-fluid text-center text-danger'>error fetching user's data</h4>

@@ -57,9 +57,9 @@ const Navbar = () => {
                                 <Link to="/members" className="nav-item nav-link">Members</Link>
                             </div>
                             <button className="btn-search btn btn-primary btn-md-square me-4 rounded-circle d-none d-lg-inline-flex" data-bs-toggle="modal" data-bs-target="#searchModal"><i className="fas fa-search"></i></button>
-                            {!user.name && <ToggleButton first='Login' second="Join-Us" firstLink={'/login'} secondLink={'/join'} />}
-                            {user.name && <ToggleButton first='Logout' second="Profile" firstLink={'/logout'} secondLink={'/user/profile-page'} />}
-                            {user.name && <Link to='/user/profile-page'><img src={user.image} alt={user.nmae} className="img-fluid rounded-circle ms-2" style={{ width: '45px', height: '45px', objectFit: 'cover' }}/></Link>}
+                            {!user && <ToggleButton first='Login' second="Join-Us" firstLink={'/login'} secondLink={'/join'} />}
+                            {user && <ToggleButton first='Logout' second="Profile" firstLink={'/logout'} secondLink={'/user/profile-page'} />}
+                            {user && <Link to='/user/profile-page'><img src={user.image} alt={user.nmae} className="img-fluid rounded-circle ms-2" style={{ width: '45px', height: '45px', objectFit: 'cover' }}/></Link>}
                         </div>
                     </nav>
                 </div>

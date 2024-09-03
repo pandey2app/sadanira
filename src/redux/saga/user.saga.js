@@ -8,7 +8,7 @@ function* getUser(){
         let user = yield getUserFromAPI()
         yield put(getUserSuccess(user))
     } catch (error) {
-        yield put(getUserError(error.message))
+        yield put(getUserError(error))
     }
 }
 
@@ -52,8 +52,6 @@ function* deleteUser({payload}){
 function* loginUser({payload}){
     try {
         const response = yield loginUserToAPI(payload)
-        console.log(response);
-        
         yield put(loginUserSuccess(response))
     } catch (error) {       
         yield put(loginUserError(error))
