@@ -1,9 +1,9 @@
 import React from 'react';
-import useGetUser from '../../hooks/useGetUser';
+import { useSelector } from 'react-redux';
 
 const ProfileDashboard = () => {
-  const user = useGetUser()
-
+  const user = useSelector(state=> state.user.currentUser)
+  
   if (!user){
     return (
       <div className='p-4' style={{minHeight : '270px'}}>

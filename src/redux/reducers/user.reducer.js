@@ -44,7 +44,7 @@ export const userReducer = (state = initialState, action) => {
             return {
                 ...state,
                 loginError: null,
-                loginResponse: action.payload ,
+                loginResponse: "success",
                 isLoggedIn: true,
                 currentUser: { ...action.payload }
             }

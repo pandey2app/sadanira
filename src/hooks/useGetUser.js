@@ -13,7 +13,7 @@ const useGetUser = () => {
     }, [dispatch])
 
     useEffect(() => {
-        if(isLoggedIn){
+        if(isLoggedIn && localStorage.getItem('isLoggedIn')){
             getUser()
         }
     }, [getUser, isLoggedIn]);
