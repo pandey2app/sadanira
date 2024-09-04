@@ -20,7 +20,7 @@ const useGetUser = () => {
         if(localStorage.getItem('isLoggedIn') && isLoggedIn && path.pathname !== '/') {
             getUser()
         }else{
-            localStorage.removeItem("isLoggedIn")
+
         }
     }, [getUser, isLoggedIn, navigate, path]);
 
