@@ -53,7 +53,7 @@ const JoinUs = () => {
                 setFormData(userInitialState)
 
                 setTimeout(()=>{
-                    navigate('/members')
+                    navigate('/user/profile-page')
                 },1000)
             }else{
                 throw new Error('Mobile or Email already registered')
