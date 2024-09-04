@@ -18,9 +18,9 @@ import Categories from '../pages/Categories';
 import ContactUsMessages from '../pages/admin/ContactUsMessages';
 import Auth from '../pages/admin/Auth';
 import Login from '../pages/Login';
+import Logout from '../helpers/Logout';
 import AuthUser from '../pages/user/AuthUser';
 import ProfileDashboard from '../pages/user/ProfileDashboard';
-import Logout from '../helpers/Logout';
 
 const Router = () => {
   return (
@@ -34,7 +34,6 @@ const Router = () => {
       <Route path="/members" element={<Members />} />
       <Route path="/join" element={<Join />} />
       <Route path="/login" element={<Login />} />
-      <Route path="/logout" element={<Logout />} />
       <Route path="/testimonial" element={<Testimonial />} />
 
       <Route path="events" element={<Events />} >
@@ -44,16 +43,17 @@ const Router = () => {
         <Route path="reading-marathon" element={<ReadingMarathon />} />
       </Route>
 
-      <Route path='creaters/:type?' element={<Creaters />}/>
+      <Route path='creaters/:type?' element={<Creaters />} />
 
-      <Route path='category/:type?' element={<Categories />}/>
+      <Route path='category/:type?' element={<Categories />} />
 
       <Route path="admin" element={<Auth />}>
-          <Route path="contact-us-messages" element={<ContactUsMessages />}/>
+        <Route path="contact-us-messages" element={<ContactUsMessages />} />
       </Route>
 
       <Route path='user' element={<AuthUser />}>
         <Route path='profile-page' element={<ProfileDashboard />} />
+        <Route path="logout" element={<Logout />} />
       </Route>
 
       <Route path="*" element={<NotFound />} />

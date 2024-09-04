@@ -1,30 +1,24 @@
-import { useDispatch } from "react-redux";
-import { logoutUserStart } from "../redux/actions/user.action";
-import { useCallback, useEffect } from "react";
-import useGetUser from "../hooks/useGetUser";
+import { useEffect } from "react";
+import useLogout from "../hooks/useLogout";
+import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 
+
 const Logout = () => {
+    useLogout()
+    const isLoggedIn = useSelector(state=> state.user.isLoggedIn)
     const navigate = useNavigate()
-    const dispatch = useDispatch()
 
-    const user = useGetUser()
-
-    if (!user) {
-        navigate('/login')
-    }
-
-    const logOutHandler = useCallback(() => {
-        dispatch(logoutUserStart())
-        localStorage.removeItem('isLoggedIn');
-        setTimeout(() =>{
-            navigate('/login')
-        },500)
-    }, [dispatch, navigate])
 
     useEffect(() => {
-        logOutHandler()
-    }, [logOutHandler])
+        if(!isLoggedIn){
+            console.log('logged out successfully');
+            navigate('/login')
+            
+        }
+    }, [isLoggedIn, navigate])
+
+    return null;
 }
 
 export default Logout
