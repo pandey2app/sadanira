@@ -6,19 +6,19 @@ const useGetUser = () => {
     const dispatch = useDispatch()
     const user = useSelector(state => state.user.currentUser)
     const getUserErrorMessage = useSelector(state => state.user.getUserErrorMessage)
-    const isLoggedIn = useSelector(state => state.user.isLoggedIn)
+    // const isLoggedIn = useSelector(state => state.user.isLoggedIn)
 
     const getUser = useCallback(() => {
         dispatch(getUserStart())
     }, [dispatch])
 
     useEffect(() => {
-        if(isLoggedIn && localStorage.getItem('isLoggedIn')){
+        if(localStorage.getItem('isLoggedIn')){
             setTimeout(()=>{
                 getUser()
             },500)
         }
-    }, [getUser, isLoggedIn]);
+    }, [getUser]);
 
     if(user.name){
         return user
