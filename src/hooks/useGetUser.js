@@ -14,7 +14,9 @@ const useGetUser = () => {
 
     useEffect(() => {
         if(isLoggedIn && localStorage.getItem('isLoggedIn')){
-            getUser()
+            setTimeout(()=>{
+                getUser()
+            },500)
         }
     }, [getUser, isLoggedIn]);
 
