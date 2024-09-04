@@ -53,6 +53,7 @@ const JoinUs = () => {
                 setFormData(userInitialState)
 
                 setTimeout(()=>{
+                    localStorage.setItem('isLoggedIn', true)
                     navigate('/user/profile-page')
                 },1000)
             }else{
