@@ -17,7 +17,7 @@ const useGetUser = () => {
 
     useEffect(() => {
         
-        if(localStorage.getItem('isLoggedIn') && isLoggedIn && path.pathname !== '/') {
+        if(localStorage.getItem('isLoggedIn') && path.pathname !== '/') {
             getUser()
         }else{
 
