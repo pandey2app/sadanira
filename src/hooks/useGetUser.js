@@ -21,8 +21,6 @@ const useGetUser = () => {
             getUser()
         }else{
             localStorage.removeItem("isLoggedIn")
-            navigate('/login')
-            return null
         }
     }, [getUser, isLoggedIn, navigate, path]);
 
