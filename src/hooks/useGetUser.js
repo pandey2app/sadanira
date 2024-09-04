@@ -1,9 +1,10 @@
 import { useCallback, useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { getUserStart } from '../redux/actions/user.action'
-import { useNavigate } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 
 const useGetUser = () => {
+    const path = useLocation()
     const dispatch = useDispatch()
     const navigate = useNavigate()
     const user = useSelector(state => state.user.currentUser)
@@ -15,14 +16,15 @@ const useGetUser = () => {
     }, [dispatch])
 
     useEffect(() => {
-        if(localStorage.getItem('isLoggedIn') && isLoggedIn){
+        
+        if(localStorage.getItem('isLoggedIn') && isLoggedIn && path.pathname !== '/') {
             getUser()
         }else{
             localStorage.removeItem("isLoggedIn")
             navigate('/login')
             return null
         }
-    }, [getUser, isLoggedIn, navigate]);
+    }, [getUser, isLoggedIn, navigate, path]);
 
     if(user.name){
         return user
