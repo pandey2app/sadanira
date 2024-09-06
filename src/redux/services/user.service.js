@@ -3,7 +3,7 @@ import axios from "axios"
 
 export const getUserFromAPI = async () => { 
     try {
-        const response = await axios.get(`${process.env.REACT_APP_ROOT_ADDRESS}/user`, { withCredentials: true });
+        const response = await axios.get(`/api/user`, { withCredentials: true });
         
         return response.data.user;        
     } catch (error) {
@@ -25,7 +25,7 @@ export const getUserByIdFromAPI = async (id) => {
 
 export const addUserToAPI = async (userData) => {
     try {
-        const response = await axios.post(`${process.env.REACT_APP_ROOT_ADDRESS}/user/add`, userData, { withCredentials: true });
+        const response = await axios.post(`/api/user/add`, userData, { withCredentials: true });
         return response.data;
     } catch (error) {
         let msg = `Error adding user: ${error.response ? error.response.data.error : error.message}`;
@@ -41,7 +41,7 @@ export const deleteUserFromAPI = async (id) => {
 
 export const loginUserToAPI = async (user) => {
     try {
-        const response = await axios.post(`${process.env.REACT_APP_ROOT_ADDRESS}/user/login`, user, { withCredentials: true });
+        const response = await axios.post(`/api/user/login`, user, { withCredentials: true });
         
         return response.data;
     } catch (error) {        
@@ -52,7 +52,7 @@ export const loginUserToAPI = async (user) => {
 
 export const logoutUserFromAPI = async (user) => {
     try {
-        const response = await axios.get(`${process.env.REACT_APP_ROOT_ADDRESS}/user/logout`, { withCredentials: true });
+        const response = await axios.get(`/api/user/logout`, { withCredentials: true });
         return response.data;
     } catch (error) {        
         let message = `Error logging out user: ${error.response? error.response.data.error : error.message}`;
