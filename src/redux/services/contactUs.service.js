@@ -4,7 +4,7 @@ import axios from "axios"
 export const getContactUsFromAPI = async () => {
     const contactUs = []
     
-    await axios.get(`/api//contactUs`)
+    await axios.get(`/api/contactUs`)
     .then(response =>contactUs.push([...response.data]))
     .catch(err => {return err})
     return contactUs
