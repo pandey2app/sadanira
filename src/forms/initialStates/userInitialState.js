@@ -12,7 +12,5 @@ export const userInitialState = {
     userCategory: 'reader', 
     art: '',
     objective: 'joined to empower the society!',
-    isActive: true, 
-    createdAt: new Date().toLocaleString(),
-    updatedAt: new Date().toLocaleString(), 
+    isActive: true
 };
