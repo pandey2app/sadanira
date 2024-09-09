@@ -79,7 +79,6 @@ const JoinUs = () => {
                 newErrors.notUnique = error.message
             }
             setErrors(newErrors)
-            console.log(errors)
         }
     }
 
