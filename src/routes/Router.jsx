@@ -21,6 +21,7 @@ import Login from '../pages/Login';
 import Logout from '../helpers/Logout';
 import AuthUser from '../pages/user/AuthUser';
 import ProfileDashboard from '../pages/user/ProfileDashboard';
+import ContactUsMessageView from '../pages/admin/ContactUsMessageView';
 
 const Router = () => {
   return (
@@ -49,6 +50,7 @@ const Router = () => {
 
       <Route path="admin" element={<Auth />}>
         <Route path="contact-us-messages" element={<ContactUsMessages />} />
+        <Route path="contact-us-messages/:id" element={<ContactUsMessageView />} />
       </Route>
 
       <Route path='user' element={<AuthUser />}>

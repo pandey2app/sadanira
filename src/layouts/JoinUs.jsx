@@ -28,19 +28,27 @@ const JoinUs = () => {
 
     const handleMobile = useCallback(async () => {
         if (formData.mobile.length === 10) {
-            const response = await axios.get(`${process.env.REACT_APP_ROOT_ADDRESS}/users?mobile=${formData.mobile}`)
-            console.log(response.data.users.length)            
+            const response = await axios.get(`${process.env.REACT_APP_BACKEND_ROOT_ADDRESS}/api/users?mobile=${formData.mobile}`)
+            if(response.data.users.length){
+                errors.mobile = "Mobile Already Exists"
+            }else{
+                errors.mobile = null
+            } 
             setResError(prev => ({ ...prev, mobileUnique: response.data.users.length ? false : true }));
         }
-    }, [formData.mobile])
+    }, [formData.mobile, errors])
 
     const handleEmail = useCallback(async () => {
         if (formData.email.length > 5 && formData.email.indexOf('@') > -1 && formData.email.indexOf('.') > -1) {
-            const response = await axios.get(`${process.env.REACT_APP_ROOT_ADDRESS}/users?email=${formData.email}`)
-            console.log(response.data.users.length)            
+            const response = await axios.get(`${process.env.REACT_APP_BACKEND_ROOT_ADDRESS}/api/users?email=${formData.email}`)
+            if(response.data.users.length){
+                errors.email = "Email Already Exists"
+            }else{
+                errors.email = null
+            }        
             setResError((prev) => ({ ...prev, emailUnique: response.data.users.length ? false : true }));
         }
-    }, [formData.email])
+    }, [formData.email, errors])
 
     const handleSubmit = async (e) => {
         e.preventDefault()

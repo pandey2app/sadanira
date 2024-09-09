@@ -1,18 +1,27 @@
-import React, { useCallback, useEffect } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { getUsersStart } from '../redux/actions/users.action'
 import UserProfileCard from '../layouts/UserProfileCard'
 
 const Members = () => {
+  const [loading, setLoading] = useState(true)
   const dispatch = useDispatch()
   const users = useSelector((state) => state.users.users)
 
   const getUsers = useCallback(() => {
     dispatch(getUsersStart())
+    setTimeout(()=>{
+      setLoading(false)
+    },2000)
   }, [dispatch])
   useEffect(() => {
     getUsers()
-  }, [getUsers])
+    if (users.length) {
+      setLoading(false)
+    }
+  }, [getUsers, users])
+
+  if(loading) return <h2 className='text-center text-danger'>Loading...</h2> 
   return (
     <>
       <section className='p-4 ' style={{ minHeight: "270px" }}>
