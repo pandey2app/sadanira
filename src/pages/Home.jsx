@@ -17,7 +17,7 @@ const Home = () => {
         console.dir(user);
     },[user])
 
-    if(!user){
+    if(!user.name){
         return(
             <>
                 <Hero />
