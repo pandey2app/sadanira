@@ -9,12 +9,13 @@ import JoinUs from '../layouts/JoinUs'
 import TeamLead from '../layouts/TeamLead'
 import Testimonial from '../layouts/Testimonial'
 import { useSelector } from 'react-redux'
+import CreatePost from '../layouts/CreatePost'
+import Posts from '../layouts/Posts'
 
 const Home = () => {
     const user = useSelector(state=> state.user.currentUser)
 
     useEffect(() =>{
-        console.dir(user);
     },[user])
 
     if(!user.name){
@@ -34,8 +35,9 @@ const Home = () => {
     }
     return (
         <>
-            
-            <TeamLead />
+            <CreatePost />
+            <Posts />
+            {/* <TeamLead /> */}
         </>
     )
 }
