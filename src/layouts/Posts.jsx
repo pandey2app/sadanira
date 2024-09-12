@@ -6,7 +6,7 @@ import { useLocation, useNavigate, useParams } from 'react-router-dom';
 const Posts = () => {
   const filter = useParams().filter ?? 'all'
   const state = useLocation().state
-
+  
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
