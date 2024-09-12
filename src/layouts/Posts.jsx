@@ -58,7 +58,7 @@ const Posts = () => {
           <p>No posts available.</p>
         ) : (
           posts.map((post, index) => (
-            <div key={index} className="col-lg-4 col-md-6 mb-4">
+            <div key={index} className="col-lg-4 col-md-6 mb-4" >
               <div className="card h-100">
                 <img
                   src={post.image ?? `${process.env.REACT_APP_BACKEND_ROOT_ADDRESS}/img/default_post_image.jpg`}
@@ -66,17 +66,18 @@ const Posts = () => {
                   alt={post.title}
                   style={{ objectFit: 'cover', maxHeight: '200px' }}
                 />
-                <div className="card-body">
+                <div className="card-body overflow-hidden" style={{maxHeight : '150px'}}>
                   <h5 className="card-title">{post.title}</h5>
-                  <p className="card-text">{post.content.substring(0, 100)}...</p>
+                  <p className="card-text">{post.content.substring(0, 50)}...</p>
                   <div>
                     {post.tags && post.tags.map((tag, index) => (
                       <span key={index} onClick={()=>getPostsByHashtag(tag)} className="me-1" style={{color: "blue", cursor : 'pointer'}}>{tag}</span>
                     ))}
                   </div>
                 </div>
-                <div className="card-footer">
-                  <a href={`/post/view/${post._id}`} className="btn btn-primary">Read More</a>
+                <div className="card-footer d-flex gap-5 justify-content-between">
+                  <a href={`/post/view/${post._id}`} className="btn btn-sm btn-primary">Read More</a>
+                  <a href={`/members/${post.author._id}`} className="btn btn-sm btn-success">By : {post.author.name}</a>
                 </div>
               </div>
             </div>

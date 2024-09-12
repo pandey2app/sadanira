@@ -19,7 +19,7 @@ const PostView = () => {
             if (apiError || postFromState.title) {
                 setLoading(false)
             }
-        }, 2000)
+        }, 300)
     }, [apiError, dispatch, id, postFromState])
 
     const getPostsByHashtag = (hashtag) =>{
