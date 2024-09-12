@@ -6,7 +6,7 @@ import { useLocation, useNavigate, useParams } from 'react-router-dom';
 const Posts = () => {
   const filter = useParams().filter ?? 'all'
   const state = useLocation().state
-  
+
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -31,11 +31,11 @@ const Posts = () => {
 
   useEffect(() => {
     fetchPosts();
-  },[filter, fetchPosts, state]);
+  }, [filter, fetchPosts, state]);
 
   useEffect(() => {
     console.log(postsState.length);
-    
+
     if (filter === 'all') {
       setPosts(postsState);
     } else if (filter.startsWith('hashtag')) {
@@ -44,7 +44,7 @@ const Posts = () => {
     }
   }, [postsState.length, postsState, filter, state]);
 
-  
+
   if (loading) {
     return <p className="text-warning text-center mt-2">Loading posts...</p>;
   }
@@ -69,12 +69,12 @@ const Posts = () => {
                   alt={post.title}
                   style={{ objectFit: 'cover', maxHeight: '200px' }}
                 />
-                <div className="card-body overflow-hidden" style={{maxHeight : '150px'}}>
+                <div className="card-body overflow-hidden" style={{ maxHeight: '150px' }}>
                   <h5 className="card-title">{post.title}</h5>
                   <p className="card-text">{post.content.substring(0, 50)}...</p>
                   <div>
                     {post.tags && post.tags.map((tag, index) => (
-                      <span key={index} onClick={()=>getPostsByHashtag(tag)} className="me-1" style={{color: "blue", cursor : 'pointer'}}>{tag}</span>
+                      <span key={index} onClick={() => getPostsByHashtag(tag)} className="me-1" style={{ color: "blue", cursor: 'pointer' }}>{tag}</span>
                     ))}
                   </div>
                 </div>
