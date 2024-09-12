@@ -55,7 +55,6 @@ const CreatePost = () => {
                 imageUrl = response.data.url;
             }
             
-            console.dir({...formData, image: imageUrl});
             dispatch(addPostStart({...formData, image: imageUrl}))
 
             setErrors({})
