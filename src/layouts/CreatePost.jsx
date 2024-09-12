@@ -70,7 +70,7 @@ const CreatePost = () => {
                 setProgress(null)
                 setShowOtherInputs(false)
                 setSuccessMessage('')
-                navigate('/')   
+                navigate(`/`, {state: Date.now()})   
             }, 1000)
         } catch (error) {
             const newErrors = {}
@@ -89,9 +89,9 @@ const CreatePost = () => {
         <div className="container py-2">
             {successMessage && <p className="text-success">{successMessage}</p>}
             <form onSubmit={handleSubmit} className=''>
-                <div className='d-flex w-100 gap-4'>
+                <div className='d-flex flex-wrap w-100 gap-4'>
                     {!successMessage && <h2 className='w-25'>Create Post</h2>}
-                    <div className="mb-3 w-100">
+                    <div className="mb-3 flex-grow-1">
                         <input
                             type="text"
                             name="title"
@@ -104,7 +104,7 @@ const CreatePost = () => {
                         {errors.title && <p className="text-danger">{errors.title}</p>}
                     </div>
 
-                    <div className="mb-3 w-100">
+                    <div className="mb-3 flex-grow-1">
                         <input
                             type="text"
                             name="tags"

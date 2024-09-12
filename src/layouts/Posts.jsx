@@ -1,10 +1,11 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getPostsStart } from '../redux/actions/post.action';
-import { useNavigate, useParams } from 'react-router-dom';
+import { useLocation, useNavigate, useParams } from 'react-router-dom';
 
 const Posts = () => {
   const filter = useParams().filter ?? 'all'
+  const state = useLocation().state
 
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -12,7 +13,6 @@ const Posts = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate()
 
-  // Get posts from Redux state
   const postsState = useSelector(state => state.post.posts);
 
   const fetchPosts = useCallback(() => {
@@ -31,20 +31,20 @@ const Posts = () => {
 
   useEffect(() => {
     fetchPosts();
-  },[fetchPosts]);
+  },[filter, fetchPosts, state]);
 
   useEffect(() => {
-    fetchPosts();
-  },[filter, fetchPosts]);
-  useEffect(() => {
+    console.log(postsState.length);
+    
     if (filter === 'all') {
       setPosts(postsState);
     } else if (filter.startsWith('hashtag')) {
 
       setPosts(postsState.filter(post => post.tags.includes(filter.replace("hashtag", "#"))));
     }
-  }, [postsState, filter]);
+  }, [postsState.length, postsState, filter, state]);
 
+  
   if (loading) {
     return <p className="text-warning text-center mt-2">Loading posts...</p>;
   }
@@ -60,7 +60,7 @@ const Posts = () => {
         {posts?.length === 0 ? (
           <p>No posts available.</p>
         ) : (
-          posts?.map((post, index) => (
+          posts?.slice().reverse().map((post, index) => (
             <div key={index} className="col-lg-4 col-md-6 mb-4" >
               <div className="card h-100">
                 <img
@@ -78,7 +78,7 @@ const Posts = () => {
                     ))}
                   </div>
                 </div>
-                <div className="card-footer d-flex gap-5 justify-content-between">
+                <div className="card-footer d-flex gap-2 justify-content-between">
                   <a href={`/post/view/${post._id}`} className="btn btn-sm btn-primary">Read More</a>
                   <a href={`/members/${post.author._id}`} className="btn btn-sm btn-success">By : {post.author.name}</a>
                 </div>
