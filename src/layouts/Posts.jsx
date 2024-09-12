@@ -57,7 +57,7 @@ const Posts = () => {
         {posts?.length === 0 ? (
           <p>No posts available.</p>
         ) : (
-          posts.map((post, index) => (
+          posts?.map((post, index) => (
             <div key={index} className="col-lg-4 col-md-6 mb-4" >
               <div className="card h-100">
                 <img
