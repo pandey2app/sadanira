@@ -5,7 +5,7 @@ import { useParams } from 'react-router-dom';
 
 const Posts = () => {
   const filter = useParams().filter ?? 'all'
-  
+
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -24,6 +24,10 @@ const Posts = () => {
     }
   }, [dispatch]);
 
+  const getPostsByHashtag = (hashtag) => {
+    navigate(`/posts/${'hashtag' + hashtag.slice(1)}`);
+  }
+
   useEffect(() => {
     fetchPosts();
   });
@@ -31,9 +35,9 @@ const Posts = () => {
   useEffect(() => {
     if (filter === 'all') {
       setPosts(postsState);
-    } else if(filter.startsWith('hashtag')) {
-      
-      setPosts(postsState.filter(post => post.tags.includes(filter.replace("hashtag","#"))));
+    } else if (filter.startsWith('hashtag')) {
+
+      setPosts(postsState.filter(post => post.tags.includes(filter.replace("hashtag", "#"))));
     }
   }, [postsState, filter]);
 
@@ -66,7 +70,7 @@ const Posts = () => {
                   <p className="card-text">{post.content.substring(0, 100)}...</p>
                   <div>
                     {post.tags && post.tags.map((tag, index) => (
-                      <span key={index} className="badge bg-primary me-1">{tag}</span>
+                      <span key={index} onClick={()=>getPostsByHashtag(tag.slice(1))} className="me-1" style={{color: "blue", cursor : 'pointer'}}>{tag}</span>
                     ))}
                   </div>
                 </div>
