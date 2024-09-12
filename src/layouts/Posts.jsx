@@ -54,7 +54,7 @@ const Posts = () => {
 
   return (
     <div className="container">
-      <h2>Posts</h2>
+      <h2 className='bg-warning text-center rounded-1 text-danger'>Posts</h2>
       <div className="row">
         {posts?.length === 0 ? (
           <p>No posts available.</p>

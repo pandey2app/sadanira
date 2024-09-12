@@ -68,10 +68,10 @@ const PostView = () => {
 
                 <p className="text-dark my-3 fs-5">{postFromState.content}</p>
 
-                <div className="d-flex justify-content-between px-4 bg-light py-2 mt-2">
-                    <p className="text-danger fw-medium fs-5">Author: {postFromState.author.name}</p>
-                    <p className="text-danger fw-medium fs-5">Posted: {new Date(postFromState.createdAt).toLocaleString()}</p>
-                    <p className="text-danger fw-medium fs-5">Updated: {new Date(postFromState.updatedAt).toLocaleString()}</p>
+                <div className="d-flex justify-content-between flex-wrap px-4 bg-light py-2 mt-2">
+                    <p className="text-danger fw-medium">Author: {postFromState.author.name}</p>
+                    <p className="text-danger fw-medium">Posted: {new Date(postFromState.createdAt).toLocaleString()}</p>
+                    <p className="text-danger fw-medium">Updated: {new Date(postFromState.updatedAt).toLocaleString()}</p>
                 </div>
             </div>
         </div>
