@@ -141,7 +141,7 @@ const CreatePost = () => {
                     <div className="mb-3 w-75">
 
                         {!progress && <input type="file" name="image" className="form-control " onChange={handleImageChange} />}
-                        {progress && <p className='text-success'>Image uploading progress : {progress}</p>}
+                        {progress && <p className='text-success'>Image uploading progress : {progress}%</p>}
                         {errors.image && <p className="text-danger">{errors.image}</p>}
                     </div>
 
