@@ -5,6 +5,7 @@ import { userReducer } from "./user.reducer";
 import { usersReducer } from "./users.reducer";
 import { creatorReducer } from "./creator.reducer";
 import { contactUsReducer } from "./contactUs.reducer";
+import { postReducer } from "./post.reducer";
 
 export const rootReducer = combineReducers({
     product : productReducer,
@@ -12,5 +13,6 @@ export const rootReducer = combineReducers({
     user : userReducer,
     users : usersReducer,
     creator : creatorReducer,
-    contactUs : contactUsReducer
+    contactUs : contactUsReducer,
+    post : postReducer
 })

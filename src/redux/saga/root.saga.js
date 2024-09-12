@@ -5,6 +5,7 @@ import user from "./user.saga";
 import creator from "./creator.saga";
 import contactUs from "./contactUs.saga";
 import users from "./users.saga";
+import post from "./post.saga";
 
 export default function* root(){
     yield all([
@@ -13,6 +14,7 @@ export default function* root(){
         fork(user),
         fork(users),
         fork(creator),
-        fork(contactUs)
+        fork(contactUs),
+        fork(post)
     ])
 }

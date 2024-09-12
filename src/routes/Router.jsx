@@ -22,6 +22,8 @@ import Logout from '../helpers/Logout';
 import AuthUser from '../pages/user/AuthUser';
 import ProfileDashboard from '../pages/user/ProfileDashboard';
 import ContactUsMessageView from '../pages/admin/ContactUsMessageView';
+import PostView from '../pages/user/PostView';
+import Posts from '../layouts/Posts';
 
 const Router = () => {
   return (
@@ -56,6 +58,12 @@ const Router = () => {
       <Route path='user' element={<AuthUser />}>
         <Route path='profile-page' element={<ProfileDashboard />} />
         <Route path="logout" element={<Logout />} />
+      </Route>
+
+      <Route path="posts/:filter?" element={<Posts />} />
+
+      <Route path='post' element={<AuthUser />}>
+        <Route path='view/:id' element={<PostView />} />
       </Route>
 
       <Route path="*" element={<NotFound />} />

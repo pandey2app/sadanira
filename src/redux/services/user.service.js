@@ -50,7 +50,7 @@ export const loginUserToAPI = async (user) => {
     }
 }
 
-export const logoutUserFromAPI = async (user) => {
+export const logoutUserFromAPI = async () => {
     try {
         const response = await axios.get(`${process.env.REACT_APP_BACKEND_ROOT_ADDRESS}/api/user/logout`, { withCredentials: true });
         return response.data;
