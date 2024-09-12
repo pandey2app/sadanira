@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getPostsStart } from '../redux/actions/post.action';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 
 const Posts = () => {
   const filter = useParams().filter ?? 'all'
@@ -10,6 +10,7 @@ const Posts = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const dispatch = useDispatch();
+  const navigate = useNavigate()
 
   // Get posts from Redux state
   const postsState = useSelector(state => state.post.posts);
