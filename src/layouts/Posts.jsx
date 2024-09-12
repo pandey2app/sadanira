@@ -31,8 +31,11 @@ const Posts = () => {
 
   useEffect(() => {
     fetchPosts();
-  });
+  },[fetchPosts]);
 
+  useEffect(() => {
+    fetchPosts();
+  },[filter]);
   useEffect(() => {
     if (filter === 'all') {
       setPosts(postsState);
