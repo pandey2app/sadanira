@@ -45,19 +45,14 @@ const CreatePost = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-
+        
         try {
             await createPostValidationSchema.validate(formData, { abortEarly: false })
-
-            let imageUrl = '';
-            if (formData.image.name) {
+            
+            let imageUrl = null;
+            if (formData?.image?.name) {
                 const response = await axios.post(`${process.env.REACT_APP_BACKEND_ROOT_ADDRESS}/api/file/upload`, formData, multipartWithProgress)
                 imageUrl = response.data.url;
-            }
-            if (!imageUrl) {
-                console.log("Error uploading image ");
-
-                return '';
             }
             
             console.dir({...formData, image: imageUrl});

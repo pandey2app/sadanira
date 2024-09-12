@@ -16,5 +16,9 @@ export const createPostValidationSchema = yup.object({
 
     image: yup
         .mixed()
-        .test('fileFormat', 'Unsupported format, only .jpg and .png allowed', value => value && ['image/jpeg', 'image/png'].includes(value.type))
+        .nullable()  
+        .test('fileFormat', 'Unsupported format, only .jpg and .png allowed', value => {
+            // Only validate the format if there is a file provided
+            return !value || (value && ['image/jpeg', 'image/png'].includes(value.type));
+        })
 })
