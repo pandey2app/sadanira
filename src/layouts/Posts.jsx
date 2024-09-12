@@ -54,7 +54,7 @@ const Posts = () => {
     <div className="container">
       <h2>Posts</h2>
       <div className="row">
-        {posts.length === 0 ? (
+        {posts?.length === 0 ? (
           <p>No posts available.</p>
         ) : (
           posts.map((post, index) => (
@@ -71,7 +71,7 @@ const Posts = () => {
                   <p className="card-text">{post.content.substring(0, 100)}...</p>
                   <div>
                     {post.tags && post.tags.map((tag, index) => (
-                      <span key={index} onClick={()=>getPostsByHashtag(tag.slice(1))} className="me-1" style={{color: "blue", cursor : 'pointer'}}>{tag}</span>
+                      <span key={index} onClick={()=>getPostsByHashtag(tag)} className="me-1" style={{color: "blue", cursor : 'pointer'}}>{tag}</span>
                     ))}
                   </div>
                 </div>

@@ -11,7 +11,8 @@ const useAxiosHeader = ()=>{
             const percentCompleted = Math.round((progressEvent.loaded * 100) / progressEvent.total);
             console.log(`Upload progress: ${percentCompleted}%`);
             setProgress(percentCompleted) 
-        }
+        },
+        withCredentials: true
     }
 
     return [multipartWithProgress, progress, setProgress]
