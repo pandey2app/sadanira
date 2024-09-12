@@ -84,7 +84,7 @@ const CreatePost = () => {
             {successMessage && <p className="text-success">{successMessage}</p>}
             <form onSubmit={handleSubmit} className=''>
                 <div className='d-flex flex-wrap w-100 gap-4'>
-                    {!successMessage && <h2 className='w-25'>Create Post</h2>}
+                    {!successMessage && <h2 className='text-sm-start text-nowrap' style={{width: '20%'}}>Create Post</h2>}
                     <div className="mb-3 flex-grow-1">
                         <input
                             type="text"
